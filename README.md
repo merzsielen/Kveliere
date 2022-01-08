@@ -1,6 +1,6 @@
 ---
 
-<p align="center"><img src="https://github.com/collinbrownwriting/Otsheukkasa/blob/ba528805d577e29a42ce8e256737def3068ddbb1/other/otsheukkasa_circle.png" alt="Kvelíere" style="width:200px;"></p>
+<p align="center"><img src="https://github.com/collinbrownwriting/Kveliere/blob/4fcbf5f966319cf543a5e2ee3eab0c83098c4b57/images/kvele.png" alt="Kvelíere" style="width:200px;"></p>
 
 ---
 
