@@ -1,3 +1,67 @@
+@charset "UTF-8";
+
+:root {
+  --KV-object-popup-background-color: #fff;
+  --KV-body-background-color: #fff;
+}
+
+@font-face {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-style: normal;
+  src: url('/font/tinos/Tinos-Regular.ttf') format('truetype');
+  unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-style: italic;
+  src: url('/font/tinos/Tinos-Italic.ttf') format('truetype');
+  unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
+  font-display: swap;
+}
+
+:root {
+  --KV-body-text-font-size: 1rem;
+  --KV-body-text-color: #000;
+  
+  --KV-tinos-font-stack: "Tinos";
+
+  --KV-sidenote-highlight-background-color: var(--KV-body-background-color);
+  --KV-sidenote-highlight-box-shadow-color: #aaa;
+  --KV-sidenote-border-color: #aaa;
+  --KV-sidenote-scrollbar-track-color: var(--KV-body-background-color);
+  --KV-sidenote-scrollbar-thumb-color: #aaa;
+  --KV-sidenote-scrollbar-thumb-hover-color: #999;
+  --KV-sidenote-self-link-border-color: #aaa;
+
+  --KV-sidenotes-max-width: 550px;
+  --KV-popups-popup-max-width: 640px;
+  --KV-popups-popup-max-height: 480px;
+}
+
+.markdownBody section:not(.collapse) > h1:first-child a {
+  position: relative;
+}
+.markdownBody section:not(.collapse) > h1:first-child a::after {
+  position: absolute;
+  top: 0.15em;
+}
+
+.markdownBody section:not(.collapse) > h2:first-child a {
+  position: relative;
+}
+.markdownBody section:not(.collapse) > h2:first-child a::after {
+  position: absolute;
+  top: 0.1em;
+  left: unset;
+  right: -0.75em;
+}
+.markdownBody section.collapse > h2:first-child a::after {
+  top: -0.2em;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,6 +85,11 @@ nav a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.sidenote figure {
+  margin: 1.5em auto;
+  max-width: calc(100% - 2px);
 }
 
 footer {
@@ -49,6 +118,19 @@ article .header {
   font-weight: bold;
   color: #000;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1760px) {
+  #sidenote-column-left,
+  #sidenote-column-right {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1761px) {
+  .marginnote {
+      display: none;
+  }
 }
 
 @media (max-width: 319px) {
@@ -138,4 +220,363 @@ article .header {
     float: left;
     font-size: 1.8rem;
   }
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 1.25em 0 1.5em 0;
+    padding: 0 0 0 2.5em;
+}
+#markdownBody ul,
+#markdownBody ol {
+    display: flow-root;
+}
+li > ul,
+li > ol {
+    margin: 0.5em 0;
+}
+
+ul > li,
+ol > li {
+    position: relative;
+    margin: 0;
+}
+ul > li:nth-of-type(n+2),
+ol > li:nth-of-type(n+2) {
+    margin: 0.5em 0 0 0;
+}
+
+ul > li::before {
+    position: absolute;
+    z-index: 1;
+}
+
+:not(ul):not(ol) > li {
+    list-style-type: none;
+}
+
+
+@media only screen and (max-width: 649px) {
+  ul,
+  ol {
+      padding: 0 0 0 1.75em;
+  }
+}
+
+ul ul:last-child,
+ul ol:last-child,
+ol ol:last-child,
+ol ul:last-child {
+  margin-bottom: 0;
+}
+p + ul,
+p + ol {
+  margin-top: 0.5em;
+}
+
+/* It should be fairly obvious,
+I drew heavily from Gwern here.
+I do intend to go back and rewrite this
+so that it isn't so blatant.*/
+
+/*************/
+/* SIDENOTES */
+/*************/
+
+#sidenote-column-left,
+#sidenote-column-right {
+    position: absolute;
+    max-width: var(--KV-sidenotes-max-width);
+    font-size: 0.85em;
+    z-index: 1;
+    pointer-events: none;
+}
+#sidenote-column-left > *,
+#sidenote-column-right > * {
+    pointer-events: auto;
+}
+#sidenote-column-left {
+    height: calc(100% - 10rem);
+    width: calc(50vw - (50% + 92px));
+    top: 10rem;
+    right: calc(100% + 64px);
+}
+#sidenote-column-right {
+    height: 100%;
+    width: calc(50vw - (50% + 104px));
+    top: 0;
+    left: calc(100% + 60px);
+}
+
+/*=-----------------=*/
+/*= Sidenote blocks =*/
+/*=-----------------=*/
+
+.sidenote {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0.85;
+    line-height: 1.5;
+    padding: 2em 0 0 0;
+}
+.sidenote.hidden {
+    display: none;
+}
+.sidenote.highlighted,
+.sidenote:hover,
+.sidenote:target,
+.sidenote.targeted {
+    background-color: var(--KV-sidenote-highlight-background-color);
+    opacity: 1.0;
+}
+.sidenote:target {
+    z-index: 1;
+}
+.sidenote.highlighted,
+.sidenote:hover {
+    z-index: 2;
+}
+
+/*  This provides a solid hover margin.
+    */
+.sidenote::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -13px;
+    left: -13px;
+}
+.sidenote.highlighted::after,
+.sidenote:hover::after,
+.sidenote:target::after,
+.sidenote.targeted::after {
+    border: 3px double var(--KV-sidenote-highlight-box-shadow-color);
+}
+
+/*=-------------------=*/
+/*= Sidenote wrappers =*/
+/*=-------------------=*/
+
+/*  Outer wrapper (scrolls).
+    */
+.sidenote-outer-wrapper {
+    /* max-height is set inline, in sidenotes.js */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-style: dotted;
+    border-color: var(--KV-sidenote-border-color);
+    border-width: 1px 0;
+}
+.sidenote.cut-off .sidenote-outer-wrapper {
+    overflow-y: auto;
+    overscroll-behavior: none;
+    width: 100%;
+    padding: 0 1px 0 0;
+    padding-right: 0.5em;
+}
+
+/*  Scroll bar styles (for WebKit/Chromium).
+    */
+.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar {
+    width: 12px;
+}
+.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar-thumb {
+    background-image: url('data:image/gif;base64,R0lGODlhBAAEAPAAMXd3d////ywAAAAABAAEAAACBgQShqgJBQA7');
+    box-shadow:
+        0 0 0 2px var(--KV-sidenote-scrollbar-track-color) inset;
+    background-size: 2px;
+}
+.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar-thumb:hover {
+    background-image: url('data:image/gif;base64,R0lGODlhBAAEAPAAMQAAAP///ywAAAAABAAEAAACBgQShqgJBQA7');
+}
+
+/*  Scroll bar styles (for Firefox).
+    */
+.sidenote.cut-off .sidenote-outer-wrapper {
+    scrollbar-color: var(--KV-sidenote-scrollbar-thumb-color) var(--KV-sidenote-scrollbar-track-color);
+}
+.sidenote.cut-off .sidenote-outer-wrapper:hover {
+    scrollbar-color: var(--KV-sidenote-scrollbar-thumb-hover-color) var(--KV-sidenote-scrollbar-track-color);
+}
+
+/*  Inner wrapper (does not scroll; stretches to height of content).
+    */
+.sidenote-inner-wrapper {
+    position: relative;
+    margin: 0.5em 0;
+}
+
+/*  Ensure content is interactable.
+    */
+.sidenote-inner-wrapper > * {
+    position: relative;
+    z-index: 1;
+}
+
+/*=--------------------------------------=*/
+/*= Sidenote contents layout corrections =*/
+/*=--------------------------------------=*/
+
+.sidenote blockquote {
+    margin: 1.5em 0 0.75em 0;
+}
+.sidenote pre {
+    margin: 1.75em 0 0.75em 0;
+}
+.sidenote blockquote + *,
+.sidenote pre + * {
+    margin-top: 1.75em;
+}
+
+.sidenote p + p {
+    text-indent: 1em;
+}
+
+#markdownBody .sidenote ul,
+#markdownBody .sidenote ol {
+    padding: 0 0 0 1.75em;
+}
+
+#markdownBody .sidenote li {
+    text-align: left;
+}
+
+/*=-------------------------------=*/
+/*= Sidenote self-links (numbers) =*/
+/*=-------------------------------=*/
+
+.sidenote > .sidenote-self-link {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    border-style: dotted;
+    border-color: var(--KV-sidenote-self-link-border-color);
+    border-width: 1px 1px 0px 1px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+/*  Disable link underlining.
+    */
+.markdownBody .sidenote > .sidenote-self-link {
+    background-image: none;
+}
+#sidenote-column-left .sidenote > .sidenote-self-link {
+    right: 0;
+}
+#sidenote-column-right .sidenote > .sidenote-self-link {
+    left: 0;
+}
+
+/*=------------=*/
+/*= Edge cases =*/
+/*=-------------=*/
+
+.sidenote .footnote-self-link {
+    display: none;
+}
+
+/*=--------------=*/
+/*= Margin notes =*/
+/*=--------------=*/
+/* display inline on mobile/narrow windows; on sufficiently-wide screens, pop out as number-less sidenotes */
+
+.marginnote {
+    /* bolding turns out to be too obtrusive for users' liking; italicized both inline & popped-out */
+    font-style: italic;
+    color: var(--KV-body-text-color);
+    font-family: var(--KV-tinos-font-stack);
+}
+.marginnote.inline {
+    color: inherit;
+}
+.marginnote.sidenote {
+    display: initial;
+    width: calc(50vw - (50% + 104px));
+    max-width: var(--KV-sidenotes-max-width);
+    left: calc(100% + 60px);
+
+    /*  We inherit left and right padding from .sidenote class. */
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    font-size: calc(var(--KV-body-text-font-size) * 0.85);
+    text-align: left;
+    text-indent: 0;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    opacity: 0.85;
+    z-index: 1;
+}
+.marginnote.sidenote:hover {
+    box-shadow: none;
+}
+/* make links in margin notes (somewhat unusual but should be supported simply because that's what one would expect) clickable/hover-able */
+.sidenote.marginnote::after {
+    z-index: -1;
+}
+
+/*  Margin notes within admonitions need special layout.
+    This is based on the width of the admonition icon area.
+    */
+.admonition .marginnote.sidenote {
+    width: calc(50vw - ((100% + (2.875em / (0.85/0.875)))/2 + 104px));
+}
+
+@media only screen and (max-width: 649px) {
+  #markdownBody figure {
+      max-width: unset;
+  }
+}
+
+body.index article #markdownBody section:not(.collapse) > h1:first-child a {
+  display: inline;
+}
+
+body.index #markdownBody a[href^="."]:not([href*="/docs/"]):not([href*="/images/"])::after,
+body.index #markdownBody a[href^="https://www.gwern.net/"]:not([href$=".pdf"])::after {
+    content: none;
+}
+
+@media only screen and (max-width: 649px) {
+  body.index #markdownBody li {
+      line-height: 1.65;
+  }
+}
+
+body.index #markdownBody section > h1:first-child a::after {
+    display: none;
+}
+
+.markdownBody .footnotes > ol > li + li {
+  margin: 1em 0 0 0;
+}
+
+/*=--------------=*/
+/*= Hover styles =*/
+/*=--------------=*/
+
+.markdownBody img.focusable:hover {
+      cursor: zoom-in;
+      box-shadow: 0 0 10px 0 var(--SA-image-focus-image-hover-drop-shadow-color);
+  }
+  .markdownBody img.focusable:active {
+      transform: scale(0.975);
+  }
+
+
+/*┌───────────────────────┐*/
+/*│ Specific adjustments. │*/
+/*└───────────────────────┘*/
+
+.popin .markdownBody p {
+  text-align: justify;
 }
