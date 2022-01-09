@@ -1,10 +1,14 @@
 ---
-title: About Me
+title: Test Post
 author: Collin Brown
 ---
 
-All work no play makes Jack a dull boy.
+This is a test post.
 ^[This is a footnote.]
+
+Don't worry. I'm not losing my mind.
+
+I just want to make sure footnotes are displaying correctly.
 
 All work no play makes Jack a dull boy.
 
