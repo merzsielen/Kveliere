@@ -199,7 +199,6 @@ Footnotes = {
                 if (previousFootnoteBottom > room.ceiling)
                     room.ceiling = previousFootnoteBottom;
             }
-
             if (footnoteFootprint.bottom - footnoteFootprint.top > room.floor - room.ceiling)
             {
                 if (nextProscribedRangeAfterFootnote == -1) {
@@ -289,10 +288,12 @@ Footnotes = {
             return;
         }
 
-        if (Footnotes.footnoteColumnLeft)
+        if (Footnotes.footnoteColumnLeft) {
             Footnotes.footnoteColumnLeft.remove();
-        if (Footnotes.footnoteColumnRight)
+        }
+        if (Footnotes.footnoteColumnRight) {
             Footnotes.footnoteColumnRight.remove();
+        }
 
         markdownBody.insertAdjacentHTML("beforeend", 
             "<div id='sidenote-column-left' class='footnotes' style='visibility:hidden'></div>" +
@@ -436,7 +437,7 @@ Footnotes = {
                 });
             });
         }, { once: true });
-
+        
         KVLR.notificationCenter.addHandlerForEvent("KVLR.contentDidLoad", Footnotes.constructFootnotesWhenMainContentLoads = (info) => {
             Footnotes.constructFootnotes();
         }, { phase: "<eventListeners", once: true, condition: (info) => info.isMainDocument });

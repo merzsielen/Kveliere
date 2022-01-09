@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --KV-object-popup-background-color: #fff;
-  --KV-body-background-color: #fff;
-}
-
 @font-face {
   font-family: "Tinos";
   font-weight: 400;
@@ -22,116 +17,74 @@
   font-display: swap;
 }
 
-:root {
-  --KV-body-text-font-size: 1rem;
-  --KV-body-text-color: #000;
-  
-  --KV-tinos-font-stack: "Tinos";
-
-  --KV-sidenote-highlight-background-color: var(--KV-body-background-color);
-  --KV-sidenote-highlight-box-shadow-color: #aaa;
-  --KV-sidenote-border-color: #aaa;
-  --KV-sidenote-scrollbar-track-color: var(--KV-body-background-color);
-  --KV-sidenote-scrollbar-thumb-color: #aaa;
-  --KV-sidenote-scrollbar-thumb-hover-color: #999;
-  --KV-sidenote-self-link-border-color: #aaa;
-
-  --KV-sidenotes-max-width: 550px;
-  --KV-popups-popup-max-width: 640px;
-  --KV-popups-popup-max-height: 480px;
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url('/font/roboto-mono/RobotoMono-Regular.ttf') format('truetype');
+  unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
+  font-display: swap;
 }
-
-.markdownBody section:not(.collapse) > h1:first-child a {
-  position: relative;
-}
-.markdownBody section:not(.collapse) > h1:first-child a::after {
-  position: absolute;
-  top: 0.15em;
-}
-
-.markdownBody section:not(.collapse) > h2:first-child a {
-  position: relative;
-}
-.markdownBody section:not(.collapse) > h2:first-child a::after {
-  position: absolute;
-  top: 0.1em;
-  left: unset;
-  right: -0.75em;
-}
-.markdownBody section.collapse > h2:first-child a::after {
-  top: -0.2em;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  color: #000;
-}
-
-header {
-  border-bottom: 0.2rem solid #000;
-}
-
-nav {
-  text-align: right;
-}
-
-nav a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.sidenote figure {
-  margin: 1.5em auto;
-  max-width: calc(100% - 2px);
-}
-
-footer {
-  margin-top: 3rem;
-  padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
-  font-size: 1.2rem;
-  color: #555;
-}
-
-h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-article .header {
-  font-size: 1.4rem;
+@font-face {
+  font-family: "Roboto Mono";
+  font-weight: 400;
   font-style: italic;
-  color: #555;
+  src: url('/font/roboto-mono/RobotoMono-Italic.ttf') format('truetype');
+  unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
+  font-display: swap;
 }
 
-.logo a {
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
+:root {
+  --KVLR-sidenotes-max-width: 550px;
+  --KVLR-body-text-font-size: 1rem;
+
+  --KVLR-body-text-color: #000;
+
+  --KVLR-pre-element-background-color: #fafafa;
+  --KVLR-pre-element-border-color: #c8c8c8;
+  --KVLR-code-element-background-color: #fafafa;
+  --KVLR-code-element-border-color: #c8c8c8;
+  --KVLR-table-cell-vertical-border-color: var(--KVLR-body-background-color);
+  --KVLR-table-row-horizontal-border-color: #000;
+  --KVLR-table-caption-border-color: #000;
+  --KVLR-table-full-width-background-color: var(--KVLR-body-background-color);
+  --KVLR-table-border-color: #000;
+  --KVLR-sidenote-self-link-border-color: #aaa;
+  --KVLR-sidenote-border-color: #aaa;
+  --KVLR-sidenote-highlight-box-shadow-color: #aaa;
+  --KVLR-sidenote-highlight-background-color: var(--KVLR-body-background-color);
+  --KVLR-object-popup-background-color: #fff;
+  --KVLR-body-background-color: #fff;
+  --KVLR-H2-bottom-border-color: #888;
+
+  --KVLR-tinos-font-stack: "Tinos";
+  --KVLR-roboto-font-stack: "Roboto Mono";
 }
 
-@media only screen and (max-width: 1760px) {
-  #sidenote-column-left,
-  #sidenote-column-right {
-      display: none;
-  }
+/* General */
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--KVLR-body-background-color);
+  color: var(--KVLR-body-text-color);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--KVLR-tinos-font-family)
 }
 
-@media only screen and (min-width: 1761px) {
-  .marginnote {
-      display: none;
-  }
+/* Article */
+body {
+  max-width: 1120px;
+
+  font-size: var(--KVLR-body-text-font-size);
 }
+
+svg {
+  fill: currentColor;
+}
+
+
+/* Size */
 
 @media (max-width: 319px) {
   body {
@@ -222,292 +175,282 @@ article .header {
   }
 }
 
-ul,
-ol {
-    list-style-type: none;
-    margin: 1.25em 0 1.5em 0;
-    padding: 0 0 0 2.5em;
-}
-#markdownBody ul,
-#markdownBody ol {
-    display: flow-root;
-}
-li > ul,
-li > ol {
-    margin: 0.5em 0;
+
+/* Navigations */
+nav {
+  text-align: right;
 }
 
-ul > li,
-ol > li {
-    position: relative;
-    margin: 0;
-}
-ul > li:nth-of-type(n+2),
-ol > li:nth-of-type(n+2) {
-    margin: 0.5em 0 0 0;
-}
-
-ul > li::before {
-    position: absolute;
-    z-index: 1;
-}
-
-:not(ul):not(ol) > li {
-    list-style-type: none;
+nav a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
-@media only screen and (max-width: 649px) {
-  ul,
-  ol {
-      padding: 0 0 0 1.75em;
-  }
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  border-top: 0.2rem solid #000;
+  font-size: 1.2rem;
+  color: #555;
 }
 
-ul ul:last-child,
-ul ol:last-child,
-ol ol:last-child,
-ol ul:last-child {
-  margin-bottom: 0;
-}
-p + ul,
-p + ol {
-  margin-top: 0.5em;
+
+/* Logo */
+.logo a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
 }
 
-/* It should be fairly obvious,
-I drew heavily from Gwern here.
-I do intend to go back and rewrite this
-so that it isn't so blatant.*/
 
-/*************/
-/* SIDENOTES */
-/*************/
+/* Headings */
+header {
+  overflow: auto;
+  border-bottom: 0.2rem solid #000;
+}
 
+article .header {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #555;
+}
+
+header h1 {
+  margin: 0.75em 0;
+  text-align: center;
+  text-transform: none;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.25em 0 0.5em 0;
+}
+
+h1 em:last-child {
+  padding-right: 0.075em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding: 0 0.5em 2px 0;
+    line-height: 1.25;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px dotted var(--KVLR-H2-bottom-border-color);
+  left: 0;
+  bottom: 0.05em;
+  pointer-events: none;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 1.125em;
+}
+h4 {
+  text-transform: capitalize;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/* Sidenotes */
 #sidenote-column-left,
 #sidenote-column-right {
-    position: absolute;
-    max-width: var(--KV-sidenotes-max-width);
-    font-size: 0.85em;
-    z-index: 1;
-    pointer-events: none;
+  position: absolute;
+  max-width: var(--KVLR-sidenotes-max-width);
+  font-size: 0.85em;
+  z-index: 1;
+  pointer-events: none;
 }
 #sidenote-column-left > *,
 #sidenote-column-right > * {
-    pointer-events: auto;
+  pointer-events:  auto;
 }
 #sidenote-column-left {
-    height: calc(100% - 10rem);
-    width: calc(50vw - (50% + 92px));
-    top: 10rem;
-    right: calc(100% + 64px);
+  height: calc(100% - 10rem);
+  width: calc(50vw - (50% + 92px));
+  top: 10rem;
+  right: calc(100% + 64px);
 }
 #sidenote-column-right {
-    height: 100%;
-    width: calc(50vw - (50% + 104px));
-    top: 0;
-    left: calc(100% + 60px);
+  height: 100%;
+  width: calc(50vw - (50% + 104px));
+  top: 0;
+  left: calc(100% + 60px);
 }
-
-/*=-----------------=*/
-/*= Sidenote blocks =*/
-/*=-----------------=*/
 
 .sidenote {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    opacity: 0.85;
-    line-height: 1.5;
-    padding: 2em 0 0 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0.85;
+  line-height: 1.5;
+  padding: 2em 0 0 0;
 }
 .sidenote.hidden {
-    display: none;
+  display: none;
 }
 .sidenote.highlighted,
 .sidenote:hover,
 .sidenote:target,
 .sidenote.targeted {
-    background-color: var(--KV-sidenote-highlight-background-color);
-    opacity: 1.0;
+  background-color: var(--KVLR-sidenote-highlight-background-color);
+  opacity: 1.0;
 }
-.sidenote:target {
-    z-index: 1;
-}
-.sidenote.highlighted,
-.sidenote:hover {
-    z-index: 2;
+.sidenot:target {
+  z-index: 2;
 }
 
-/*  This provides a solid hover margin.
-    */
 .sidenote::after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    top: -13px;
-    left: -13px;
+  content: "";
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  top: -13px;
+  left: -13px;
 }
 .sidenote.highlighted::after,
 .sidenote:hover::after,
 .sidenote:target::after,
 .sidenote.targeted::after {
-    border: 3px double var(--KV-sidenote-highlight-box-shadow-color);
+    border: 3px double var(--KVLR-sidenote-highlight-box-shadow-color);
 }
 
-/*=-------------------=*/
-/*= Sidenote wrappers =*/
-/*=-------------------=*/
 
-/*  Outer wrapper (scrolls).
-    */
+/* Sidnote Wrappers */
 .sidenote-outer-wrapper {
-    /* max-height is set inline, in sidenotes.js */
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    border-style: dotted;
-    border-color: var(--KV-sidenote-border-color);
-    border-width: 1px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-style: dotted;
+  border-color: var(--KVLR-sidenote-border-color);
+  border-width: 1px 0;
 }
 .sidenote.cut-off .sidenote-outer-wrapper {
-    overflow-y: auto;
-    overscroll-behavior: none;
-    width: 100%;
-    padding: 0 1px 0 0;
-    padding-right: 0.5em;
+  overflow-y: auto;
+  overscroll-behavior: none;
+  width: 100%;
+  padding: 0 1px 0 0;
+  padding-right: 0.5em;
 }
-
-/*  Scroll bar styles (for WebKit/Chromium).
-    */
-.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar {
-    width: 12px;
-}
-.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar-thumb {
-    background-image: url('data:image/gif;base64,R0lGODlhBAAEAPAAMXd3d////ywAAAAABAAEAAACBgQShqgJBQA7');
-    box-shadow:
-        0 0 0 2px var(--KV-sidenote-scrollbar-track-color) inset;
-    background-size: 2px;
-}
-.sidenote.cut-off .sidenote-outer-wrapper::-webkit-scrollbar-thumb:hover {
-    background-image: url('data:image/gif;base64,R0lGODlhBAAEAPAAMQAAAP///ywAAAAABAAEAAACBgQShqgJBQA7');
-}
-
-/*  Scroll bar styles (for Firefox).
-    */
-.sidenote.cut-off .sidenote-outer-wrapper {
-    scrollbar-color: var(--KV-sidenote-scrollbar-thumb-color) var(--KV-sidenote-scrollbar-track-color);
-}
-.sidenote.cut-off .sidenote-outer-wrapper:hover {
-    scrollbar-color: var(--KV-sidenote-scrollbar-thumb-hover-color) var(--KV-sidenote-scrollbar-track-color);
-}
-
-/*  Inner wrapper (does not scroll; stretches to height of content).
-    */
 .sidenote-inner-wrapper {
-    position: relative;
-    margin: 0.5em 0;
+  position: relative;
+  margin: 0.5em 0;
 }
-
-/*  Ensure content is interactable.
-    */
 .sidenote-inner-wrapper > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
-/*=--------------------------------------=*/
-/*= Sidenote contents layout corrections =*/
-/*=--------------------------------------=*/
 
+/* Sidenote Corrections */
 .sidenote blockquote {
-    margin: 1.5em 0 0.75em 0;
+  margin: 1.5em 0 0.75em 0;
 }
 .sidenote pre {
-    margin: 1.75em 0 0.75em 0;
+  margin: 1.75em 0 0.75em 0;
 }
 .sidenote blockquote + *,
 .sidenote pre + * {
-    margin-top: 1.75em;
+  margin-top: 1.75em;
 }
 
 .sidenote p + p {
-    text-indent: 1em;
+  text-indent: 1em;
 }
 
 #markdownBody .sidenote ul,
 #markdownBody .sidenote ol {
-    padding: 0 0 0 1.75em;
+  padding: 0 0 0 1.75em;
 }
 
 #markdownBody .sidenote li {
-    text-align: left;
+  text-align: left;
 }
 
-/*=-------------------------------=*/
-/*= Sidenote self-links (numbers) =*/
-/*=-------------------------------=*/
 
+/* Sidenote Self-Links */
 .sidenote > .sidenote-self-link {
-    font-weight: 600;
-    position: absolute;
-    top: 0;
-    border-style: dotted;
-    border-color: var(--KV-sidenote-self-link-border-color);
-    border-width: 1px 1px 0px 1px;
-    width: 2em;
-    height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  border-style: dotted;
+  border-color: var(--KVLR-sidenote-self-link-border-color);
+  border-width: 1px 1px 0px 1px;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
-/*  Disable link underlining.
-    */
 .markdownBody .sidenote > .sidenote-self-link {
-    background-image: none;
+  background-image: none;
 }
 #sidenote-column-left .sidenote > .sidenote-self-link {
-    right: 0;
+  right: 0;
 }
 #sidenote-column-right .sidenote > .sidenote-self-link {
-    left: 0;
+  left: 0;
 }
-
-/*=------------=*/
-/*= Edge cases =*/
-/*=-------------=*/
-
 .sidenote .footnote-self-link {
-    display: none;
+  display: none;
 }
 
-/*=--------------=*/
-/*= Margin notes =*/
-/*=--------------=*/
-/* display inline on mobile/narrow windows; on sufficiently-wide screens, pop out as number-less sidenotes */
+/* Sidenote Screens */
+@media only screen and (max-width: 1760px) {
+  #sidenote-column-left,
+  #sidenote-column-right {
+      display: none;
+  }
+}
 
+@media only screen and (min-width: 1761px) {
+  .marginnote {
+      display: none;
+  }
+}
+
+/* Margin Notes */
 .marginnote {
-    /* bolding turns out to be too obtrusive for users' liking; italicized both inline & popped-out */
-    font-style: italic;
-    color: var(--KV-body-text-color);
-    font-family: var(--KV-tinos-font-stack);
+  font-style: italic;
+  color: var(--GW-body-text-color);
+  font-family: var(--KVLR-tinos-font-stack);
 }
 .marginnote.inline {
-    color: inherit;
+  color: inherit;
 }
 .marginnote.sidenote {
-    display: initial;
-    width: calc(50vw - (50% + 104px));
-    max-width: var(--KV-sidenotes-max-width);
+  display: initial;
+  width: calc(50vw - (50% + 104px));
+    max-width: var(--KVLR-sidenotes-max-width);
     left: calc(100% + 60px);
 
-    /*  We inherit left and right padding from .sidenote class. */
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 
-    font-size: calc(var(--KV-body-text-font-size) * 0.85);
+    font-size: calc(var(--KVLR-body-text-font-size) * 0.85);
     text-align: left;
     text-indent: 0;
     -webkit-hyphens: none;
@@ -517,66 +460,224 @@ so that it isn't so blatant.*/
     z-index: 1;
 }
 .marginnote.sidenote:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
-/* make links in margin notes (somewhat unusual but should be supported simply because that's what one would expect) clickable/hover-able */
 .sidenote.marginnote::after {
-    z-index: -1;
+  z-index: -1;
 }
 
-/*  Margin notes within admonitions need special layout.
-    This is based on the width of the admonition icon area.
-    */
-.admonition .marginnote.sidenote {
-    width: calc(50vw - ((100% + (2.875em / (0.85/0.875)))/2 + 104px));
+
+/* Tables */
+h1 + .table-wrapper,
+h2 + .table-wrapper,
+h3 + .table-wrapper,
+h4 + .table-wrapper,
+h5 + .table-wrapper,
+h6 + .table-wrapper {
+    margin: 0 0 2.125em 0;
 }
 
-@media only screen and (max-width: 649px) {
-  #markdownBody figure {
-      max-width: unset;
-  }
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.75em;
+  border-style: solid;
+  border-color: var(--KVLR-table-border-color);
+  border-width: 2px 0;
 }
 
-body.index article #markdownBody section:not(.collapse) > h1:first-child a {
-  display: inline;
+.table-wrapper.full-width .full-width-table-inner-wrapper {
+  background-color: var(--KVLR-table-full-width-background-color);
+}
+blockquote .table-wrapper.full-width {
+  background-color: transparent;
 }
 
-body.index #markdownBody a[href^="."]:not([href*="/docs/"]):not([href*="/images/"])::after,
-body.index #markdownBody a[href^="https://www.gwern.net/"]:not([href$=".pdf"])::after {
-    content: none;
+table caption {
+  padding: 0.25em 0.75em;
+  font-style: italic;
+  font-size: 1.25em;
+  border-top: 2px solid var(--KVLR-table-caption-border-color);
 }
 
-@media only screen and (max-width: 649px) {
-  body.index #markdownBody li {
-      line-height: 1.65;
-  }
+table th,
+table td {
+    padding: 7px 10px;
+    line-height: 1.35;
+}
+table th {
+  font-weight: bold;
+  border-bottom: 1px solid var(--KVLR-table-row-horizontal-border-color);
+  text-align: left;
+  hyphens: none;
+}
+table td {
+  vertical-align: top;
+}
+table th + th,
+table td + td {
+  border-left: 1px solid var(--KVLR-table-cell-vertical-border-color);
 }
 
-body.index #markdownBody section > h1:first-child a::after {
-    display: none;
+table td > code {
+  word-break: normal;
 }
 
-.markdownBody .footnotes > ol > li + li {
-  margin: 1em 0 0 0;
+
+/* Code Blocks */
+.uri,
+code {
+  --KVLR-link-underline-background-color: var(--KVLR-code-element-background-color)
+
+  border: 1px solid var(--KVLR-code-element-border-color);
+  background-color: var(--KVLR-code-element-background-color);
+
+  padding: 0 4px;
+
+  font-family: var(--KVLR-roboto-font-stack);
+
+  font-feature-settings: 'ss02', 'ss03';
+
+  font-size: 0.9em;
+  word-break: break-all;
+  hyphens: none;
+}
+pre {
+  margin: 1.75em auto;
+  border: 1px solid var(--KVLR-pre-element-border-color);
+  background-color: var(--KVLR-pre-element-background-color);
+  cursor: text;
+  max-height: calc(100vh - 8em);
+}
+pre code {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
-/*=--------------=*/
-/*= Hover styles =*/
-/*=--------------=*/
 
-.markdownBody img.focusable:hover {
-      cursor: zoom-in;
-      box-shadow: 0 0 10px 0 var(--SA-image-focus-image-hover-drop-shadow-color);
-  }
-  .markdownBody img.focusable:active {
-      transform: scale(0.975);
-  }
+/* Multi-Columns */
+.columns > ul,
+.columns > ol {
+  column-width: 15em;
+  column-gap: 3em;
+  margin-bottom: 2em;
+}
+.markdownBody .columns li,
+.markdownBody .columns li p {
+  text-align: left;
+  break-inside: avoid;
+}
+
+.columns > ul figure {
+  margin: 0 0 1.5em 0;
+}
 
 
-/*┌───────────────────────┐*/
-/*│ Specific adjustments. │*/
-/*└───────────────────────┘*/
+/* Metadata */
+#page-metadata hr {
+  display: none;
+}
+#page-metadata {
+  margin: 0 0 2rem 0;
+  overflow: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+#page-metadata p {
+  text-align: left;
+}
 
-.popin .markdownBody p {
+#page-metadata #page-description {
+  display: block;
+  margin: 0 auto 0.75em auto;
+  font-style: italic;
   text-align: justify;
+}
+#page-metadata #page-description em {
+  font-style: normal;
+}
+
+#page-metadata #page-description ~ * {
+  font-size: 0.9em;
+}
+
+#page-metadata #page-description + br {
+  display: none;
+}
+
+#page-metadata-block span:nth-of-type(n+3) {
+  white-space: nowrap;
+}
+
+#page-tags,
+#page-metadata-block {
+    hyphens: none;
+}
+
+
+/* Main Content */
+.markdownBody {
+  overflow-wrap: break-word;
+}
+
+@media only screen and (min-width: 1761px) {
+  #markdownBody {
+      position: relative;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  @media only screen and (max-width: 1000px) {
+      .markdownBody {
+          line-height: 1.50;
+      }
+  }
+  @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .markdownBody {
+          line-height: 1.55;
+      }
+  }
+  @media only screen and (min-width: 1201px) {
+      .markdownBody {
+          line-height: 1.60;
+      }
+  }
+}
+
+h1 {
+  margin: 0.6em 0 0.5em -0.75rem;
+  font-weight: bold;
+  position: relative;
+}
+
+
+/* Misc */
+body.index #markdownBody section > h1:first-child a::after {
+  display: none;
+}
+
+@media only screen and (max-width: 1184px) {
+  body.index #back-to-top {
+      left: 4rem;
+  }
+}
+@media only screen and (min-width: 1185px) {
+  body.index #back-to-top {
+      left: calc(120px + (100% - 1185px)/2);
+  }
+}
+@media only screen and (min-width: 1761px) {
+  body.index #back-to-top {
+      left: calc(80px + (100% - 1185px)/2);
+  }
+}
+@media only screen and (max-width: 649px) {
+  body.index #back-to-top {
+      left: unset;
+  }
 }
