@@ -10,21 +10,28 @@
         <link rel="stylesheet" href="/css/default.css" />
     </head>
     <body>
-        <header>
+        <div id="sidebar">
+            <a id="logo" href="/" title="Home">
+                <img src="/images/kvele.svg" width="100" height="110" alt="Kvelíere Logo">
+            </a>
+            <div id="sidebar-links">
+                <a class="link" href="/about" title="Who am I?">ABOUT</a>
+                <a class="link" href="/contact" title="How can you contact me?">CONTACT</a>
+            </div>
+        </div>
+
+        <!-- <header>
             <div class="logo">
+                <a href="/"><img id="homenav" src="/images/kvele.svg" style="display:inline-block" target="_blank"></a>
                 <a href="/">Kvelíere</a>
             </div>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/archive.html">Archive</a>
-            </nav>
-        </header>
+        </header> -->
 
-        <main role="main" id="markdownBody">
+        <main role="main">
             <h1>$title$</h1>
-            $body$
+            <div id="markdownBody">
+                $body$
+            </div>
         </main>
 
         <footer>
