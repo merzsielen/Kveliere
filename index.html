@@ -1,33 +1,118 @@
 ---
 title: Welcome
+thought: "I think it'd be neat to add a little js that places marginalia—specifically doodles from Medieval manuscripts—in random places across this site."
 ---
 
-<img src="/images/ytxxlli.svg" style="width:213px;height:313px;float: right; margin: 10px;" />
+<img id="indimage" src="/images/ytxxlli.svg" style="width:213px;height:313px;float: right; margin: 10px;" />
 
-<p id="markdownBody" style="margin-right: 250px;">
-    Welcome to Kvelíere, the blog, portfolio, and playground of Collin Brown. You'll find an assortment of
-    links to my various projects; I mostly write fiction, but I'll also include introductions to a number of
-    constructed languages of mine, in addition to any worldbuilding notes I want to share. In addition, I'm likely
-    to publish articles discussing any of my honestly quite ecclectic interests. I'm especially fascinated by
-    history, linguistics, programming, literature, and any combination thereof.
-    <br>
-    <br>
-    I program in C++ or C# for the most part, but I have experience with Python and a few other languages. I've
-    some experience with Unity, but these days I've been working with OpenGL, coding the systems you'd find in the
-    former from scratch: a better way to learn how they all really work under the hood, I've found. I
-    particularly enjoy coding the sorts of games I like to play: roguelikes (of the Nethack variety), sims (in the
-    vein of Dwarf Fortress), and grand strategy games (such as Crusader Kings 2). You can likely glean more of
-    my personality from this list than I'd like to admit.
-    <br>
-    <br>
-    As for linguistics, I've reached an intermediate level in Spanish (bienvenidos!) and working to do the same
-    in Japanese (ようこそ), but I've also spent a little time—read, too little—with French and (even less with)
-    Arabic. That's not to say those are the only languages with which I'm familiar in terms of phonology or
-    grammar, only those which I've spent any respectable length of time trying to learn.
-    <br>
-    <br>
-    I recently transitioned to this site, hence its sparseness. Expect more to arrive soon.
-</p>
-<!-- 
-<h2>Posts</h2>
-$partial("templates/post-list.html")$ -->
+<main>
+    <div id="markdownBody">
+        <p>
+            Welcome to Kvelíere, the blog, portfolio, and playground of Collin Brown. You'll find an assortment of
+            links to my various projects; I mostly write fiction, but I'll also include introductions to a number of
+            constructed languages of mine, in addition to any worldbuilding notes I want to share. In addition, I'm likely
+            to publish articles discussing any of my honestly quite ecclectic interests. I'm especially fascinated by
+            history, linguistics, programming, literature, and any combination thereof.
+        </p>
+        <p>
+            I program in C++ or C# for the most part, but I have experience with Python and a few other languages. I've
+            some experience with Unity, but these days I've been working with OpenGL, coding the systems you'd find in the
+            former from scratch: a better way to learn how they all really work under the hood, I've found. I
+            particularly enjoy coding the sorts of games I like to play: roguelikes (of the Nethack variety), sims (in the
+            vein of Dwarf Fortress), and grand strategy games (such as Crusader Kings 2). You can likely glean more of
+            my personality from this list than I'd like to admit.
+        </p>
+        <p>
+            As for linguistics, I've reached an intermediate level in Spanish (bienvenidos!) and working to do the same
+            in Japanese (ようこそ), but I've also spent a little time—read, too little—with French and (even less with)
+            Arabic. That's not to say those are the only languages with which I'm familiar in terms of phonology or
+            grammar, only those which I've spent any respectable length of time trying to learn.
+        </p>
+        <p>
+            Constructing languages is a bit of an obsession of mine: most my work here goes to naturalistic languages,
+            but I've toyed around with engineered and personal languages.
+            <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+            Most recently, I've begun work on a fusional, non-rigidly head-initial language which is meant to phonaesthetically
+            resemble Northern Sami, Icelandic, and Japanese; the grammar is influenced by Irish and Northern Sami; and the central
+            writing system is a logography in the vein of Chinese. By the time you're reading this, I'm likely to have some of that 
+            content published here.
+            <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+        </p>
+        <p>
+            I recently transitioned to this site, hence its sparseness. Expect more to arrive soon. This shift was honestly mostly
+            motivated by my desire to have more control over the site as a whole, inspired in no small part by a number of personal
+            and professional blogs such as <a href="https://s.ai/">S.ai</a>, <a href="https://www.gwern.net">Gwern.net</a>, and
+            <a href="https://www.lingweenie.org/">Lingweenie.org</a>.
+        </p>
+        <p>
+            Now that I've gotten that out of my system, I'd like to say thanks for reading, and I hope you enjoy.
+        </p>
+    </div>
+    <br><hr /><br>
+    <div>
+        <div id="navrow">
+            <div id="navcolumn">
+                <h2><a href="/tags/fiction.html">Fiction</a></h2><hr />
+                <ul>
+                    <li><a href="/fiction/2022-01-10-tapestry-main.html">Tapestry: Main Page</a></li>
+                    <li><a href="/fiction/2021-07-25-tapestry-one.html">Tapestry: Chapter One</a></li>
+                    <li><a href="/fiction/2021-08-06-tapestry-twelve.html">Tapestry: Chapter Twelve</a></li>
+                    <li><a href="/fiction/2021-08-16-tapestry-twenty-three.html">Tapestry: Chapter Twenty-Three</a></li>
+                </ul>  
+            </div>
+            <div id="navcolumn">
+                <h2><a href="/tags/conlang.html">Conlangs</a></h2><hr />
+                <ul>
+                    <li>Who knows what I'll put here?</li>
+                    <li>Definitely not me.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="navrow">
+            <div id="navcolumn">
+                <h2><a href="/tags/coding.html">Coding</a></h2><hr />
+                <ul>
+                    <li>Who knows what I'll put here?</li>
+                    <li>Definitely not me.</li>
+                  </ul>  
+            </div>
+            <div id="navcolumn">
+                <h2><a href="/tags/history.html">History</a></h2><hr />
+                <ul>
+                    <li>Who knows what I'll put here?</li>
+                    <li>Definitely not me.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="navrow">
+            <div id="navcolumn">
+                <h2><a href="/tags/linguistics.html">Linguistics</a></h2><hr />
+                <ul>
+                    <li>Who knows what I'll put here?</li>
+                    <li>Definitely not me.</li>
+                  </ul>
+            </div>
+            <div id="navcolumn">
+                <h2><a href="/tags/other.html">Other</a></h2><hr />
+                <ul>
+                    <li>Who knows what I'll put here?</li>
+                    <li>Definitely not me.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr />
+        <ol>
+            <li id="fn1" role="doc-endnote"><p>My most fleshed out language is Ytxxlí, a polysnthetic language influenced by Nahuatl, Navajo, and Georgian.
+                                            This is where the script just above this sidenote comes from—inspired by Blackletter, though it functions as an
+                                            abugida like Devanagari.</p></li>
+            <li id="fn2" role="doc-endnote"><p>The character above is a highly stylized rendering of the word "Kvelíere" in this language;
+                                            it translates to the "Black Dog," something of a reference to Samuel Johnson's use of the term:
+                                            "the black dog I hope always to resist, and in time to drive...."
+                                            <a style="font-style: italic;">Letter to Mrs. Thrale</a>, 28 June, 1783.</p></li>
+                                            <br>
+        </ol>
+    </section>
+</main>

@@ -52,10 +52,14 @@
 
 :root {
   --KVLR-sidenotes-max-width: 550px;
-  --KVLR-body-text-font-size: 1rem;
+  --KVLR-body-text-font-size: 0.8rem;
+  --KVLR-thought-text-size: 0.65rem;
+  --KVLR-thought-title-size: 1.2rem;
 
   --KVLR-body-text-color: #000;
+  --KVLR-thought-text-color: #444;
 
+  --KVLR-thought-background-color:  rgb(204, 204, 204);
   --KVLR-body-link-hover-color: #888;
   --KVLR-pre-element-background-color: #fafafa;
   --KVLR-pre-element-border-color: #c8c8c8;
@@ -72,6 +76,8 @@
   --KVLR-sidenote-highlight-background-color: var(--KVLR-body-background-color);
   --KVLR-object-popup-background-color: #fff;
   --KVLR-body-background-color: #fff;
+  --KVLR-H1-top-border-color: #000;
+  --KVLR-H1-bottom-border-color: #888;
   --KVLR-H2-bottom-border-color: #888;
 
   --KVLR-tinos-font-stack: "Tinos";
@@ -101,10 +107,9 @@ svg {
 
 
 /* Size */
-
 @media (max-width: 319px) {
   body {
-    width: 90%;
+    width: 80%;
     margin: 0;
     padding: 0 5%;
   }
@@ -133,7 +138,7 @@ svg {
 
 @media (min-width: 320px) {
   body {
-    width: 90%;
+    width: 80%;
     margin: 0;
     padding: 0 5%;
   }
@@ -162,7 +167,7 @@ svg {
 
 @media (min-width: 640px) {
   body {
-    width: 60rem;
+    width: 40rem;
     margin: 0 auto;
     padding: 0;
   }
@@ -191,15 +196,25 @@ svg {
   }
 }
 
+
+/* Page Logos */
+#pagelogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
 /* Navigations */
 #sidebar {
   font-family: var(--KVLR-tinos-font-stack);
   font-variant: bold;
   float: left;
   text-align: left;
-  margin: -1.0em 0 0em -9.0em;
+  margin: 2.0em 0 0em -25%;
   background-color: rgb(204, 204, 204);
-  border: 0.2rem dotted #000;
+  border: 0.2rem inset #000;
 }
 #sidebar a {
   display: block;
@@ -298,15 +313,26 @@ footer {
 }
 
 
-/* Logo */
-.logo a {
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
+/* Headings */
+#title {
+  overflow: auto;
+  text-align: center;
+  vertical-align: top;
+  font-variant: small-caps;
+  font-size: 5.4rem;
+  bottom: 0.5em;
+  border-bottom: 0.2rem solid #000;
+  padding: 0px 0px 10px 0px;
 }
 
+#details {
+  overflow: auto;
+  text-align: left;
+  vertical-align: top;
+  color: #888;
+  padding: 0px 0px 20px 0px;
+}
 
-/* Headings */
 header {
   overflow: auto;
   border-bottom: 0.2rem solid #000;
@@ -318,16 +344,17 @@ article .header {
   color: #555;
 }
 
-header h1 {
+h1 {
   margin: 0.75em 0;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   text-transform: none;
   font-variant: small-caps;
-  font-size: 2.5em;
+  font-size: 1.5em;
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -1px;
+  padding-top: 0.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -345,12 +372,23 @@ h2 {
     line-height: 1.25;
 }
 
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px inset var(--KVLR-H1-bottom-border-color);
+  left: 0;
+  bottom: 0.05em;
+  pointer-events: none;
+}
+
 h2::after {
   content: "";
   display: block;
   position: absolute;
   width: 100%;
-  border-bottom: 1px dotted var(--KVLR-H2-bottom-border-color);
+  /*border-bottom: 1px dotted var(--KVLR-H2-bottom-border-color);*/
   left: 0;
   bottom: 0.05em;
   pointer-events: none;
@@ -372,6 +410,45 @@ h6 {
   font-style: italic;
 }
 
+
+/* Thoughts */
+/* I want to add a little tweet-like thing
+where I can put my thoughts; the most recent
+will appear on the front page. */
+#thoughtbar {
+  overflow: auto;
+  position: relative;
+  float: left;
+  text-align: left;
+  margin: 23em 0 0em -25%;
+  z-index: 1;
+  position: relative;
+  padding-top: 0.4em;
+  padding-left: 0.4em;
+  background-color: rgb(204, 204, 204);
+  border: 0.2rem inset #000;
+}
+#thought {
+  overflow: auto;
+  font-size: var(--KVLR-thought-text-size);
+  color: var(--KVLR-thought-text-color);
+  padding-top: 0.6rem;
+}
+@media only screen and (min-width: 650px) {
+  #thoughtbar {
+    padding: 0 20px 20px 20px;
+    width: 100px;
+  }
+}
+#thoughtbar-title {
+  overflow: auto;
+  text-align: center;
+  vertical-align: top;
+  font-variant: small-caps;
+  font-size: var(--KVLR-thought-title-size);
+  border-bottom: 0.1rem dotted #000;
+  padding-top: 0.4em;
+}
 
 /* Sidenotes */
 #sidenote-column-left,
@@ -442,7 +519,7 @@ h6 {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  border-style: dotted;
+  border-style: inset;
   border-color: var(--KVLR-sidenote-border-color);
   border-width: 1px 0;
 }
@@ -490,11 +567,13 @@ h6 {
 
 
 /* Sidenote Self-Links */
-.sidenote > .sidenote-self-link {
+.sidenote > .footnote-self-link {
   font-weight: 600;
+  font-family: var(--KVLR-tinos-font-stack);
+  font-style: bold;
   position: absolute;
   top: 0;
-  border-style: dotted;
+  border-style: inset;
   border-color: var(--KVLR-sidenote-self-link-border-color);
   border-width: 1px 1px 0px 1px;
   width: 2em;
@@ -504,28 +583,25 @@ h6 {
   justify-content: center;
   z-index: 1;
 }
-.markdownBody .sidenote > .sidenote-self-link {
+.markdownBody .sidenote > .footnote-self-link {
   background-image: none;
 }
-#sidenote-column-left .sidenote > .sidenote-self-link {
+#sidenote-column-left .sidenote > .footnote-self-link {
   right: 0;
 }
-#sidenote-column-right .sidenote > .sidenote-self-link {
+#sidenote-column-right .sidenote > .footnote-self-link {
   left: 0;
-}
-.sidenote .footnote-self-link {
-  display: none;
 }
 
 /* Sidenote Screens */
-@media only screen and (max-width: 1760px) {
+@media only screen and (max-width: 1530px) {
   #sidenote-column-left,
   #sidenote-column-right {
       display: none;
   }
 }
 
-@media only screen and (min-width: 1761px) {
+@media only screen and (min-width: 1531px) {
   .marginnote {
       display: none;
   }
@@ -534,7 +610,7 @@ h6 {
 /* Margin Notes */
 .marginnote {
   font-style: italic;
-  color: var(--GW-body-text-color);
+  color: var(--KVLR-body-text-color);
   font-family: var(--KVLR-tinos-font-stack);
 }
 .marginnote.inline {
@@ -566,114 +642,20 @@ h6 {
 }
 
 
-/* Tables */
-h1 + .table-wrapper,
-h2 + .table-wrapper,
-h3 + .table-wrapper,
-h4 + .table-wrapper,
-h5 + .table-wrapper,
-h6 + .table-wrapper {
-    margin: 0 0 2.125em 0;
+/* Index Columns */
+#navcolumn {
+  border: 0.3rem inset #888;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  top: 0;
+  padding: 0px 24px 10px 24px;
 }
-
-table {
-  margin: 0;
-  padding: 0;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.75em;
-  border-style: solid;
-  border-color: var(--KVLR-table-border-color);
-  border-width: 2px 0;
-}
-
-.table-wrapper.full-width .full-width-table-inner-wrapper {
-  background-color: var(--KVLR-table-full-width-background-color);
-}
-blockquote .table-wrapper.full-width {
-  background-color: transparent;
-}
-
-table caption {
-  padding: 0.25em 0.75em;
-  font-style: italic;
-  font-size: 1.25em;
-  border-top: 2px solid var(--KVLR-table-caption-border-color);
-}
-
-table th,
-table td {
-    padding: 7px 10px;
-    line-height: 1.35;
-}
-table th {
-  font-weight: bold;
-  border-bottom: 1px solid var(--KVLR-table-row-horizontal-border-color);
-  text-align: left;
-  hyphens: none;
-}
-table td {
-  vertical-align: top;
-}
-table th + th,
-table td + td {
-  border-left: 1px solid var(--KVLR-table-cell-vertical-border-color);
-}
-
-table td > code {
-  word-break: normal;
-}
-
-
-/* Code Blocks */
-.uri,
-code {
-  --KVLR-link-underline-background-color: var(--KVLR-code-element-background-color)
-
-  border: 1px solid var(--KVLR-code-element-border-color);
-  background-color: var(--KVLR-code-element-background-color);
-
-  padding: 0 4px;
-
-  font-family: var(--KVLR-roboto-font-stack);
-
-  font-feature-settings: 'ss02', 'ss03';
-
-  font-size: 0.9em;
-  word-break: break-all;
-  hyphens: none;
-}
-pre {
-  margin: 1.75em auto;
-  border: 1px solid var(--KVLR-pre-element-border-color);
-  background-color: var(--KVLR-pre-element-background-color);
-  cursor: text;
-  max-height: calc(100vh - 8em);
-}
-pre code {
-  display: block;
-  padding: 0.4rem 0.7rem;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-}
-
-
-/* Multi-Columns */
-.columns > ul,
-.columns > ol {
-  column-width: 15em;
-  column-gap: 3em;
-  margin-bottom: 2em;
-}
-.markdownBody .columns li,
-.markdownBody .columns li p {
-  text-align: left;
-  break-inside: avoid;
-}
-
-.columns > ul figure {
-  margin: 0 0 1.5em 0;
+  
+#navrow:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -718,13 +700,12 @@ pre code {
     hyphens: none;
 }
 
-
 /* Main Content */
 .markdownBody {
   overflow-wrap: break-word;
 }
 
-@media only screen and (min-width: 1761px) {
+@media only screen and (min-width: 1261px) {
   #markdownBody {
       position: relative;
   }
@@ -745,6 +726,14 @@ pre code {
       .markdownBody {
           line-height: 1.60;
       }
+  }
+  @media only screen and (max-width: 500px) {
+    #indimage {
+        display: none;
+    }
+    #title {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -770,7 +759,7 @@ body.index #markdownBody section > h1:first-child a::after {
       left: calc(120px + (100% - 1185px)/2);
   }
 }
-@media only screen and (min-width: 1761px) {
+@media only screen and (min-width: 1261px) {
   body.index #back-to-top {
       left: calc(80px + (100% - 1185px)/2);
   }

@@ -15,27 +15,53 @@
                 <img src="/images/kvele.svg" width="100" height="110" alt="Kvelíere Logo">
             </a>
             <div id="sidebar-links">
-                <a class="link" href="/about" title="Who am I?">ABOUT</a>
-                <a class="link" href="/contact" title="How can you contact me?">CONTACT</a>
+                <a class="link" href="/about.html" title="Who am I?">ABOUT</a>
+                <a class="link" href="/contact.html" title="How can you contact me?">CONTACT</a>
+                <a class="link" href="/the-little-brown-book.html" title="Where are my essays?">THE LITTLE BROWN BOOK</a>
             </div>
         </div>
-
-        <!-- <header>
-            <div class="logo">
-                <a href="/"><img id="homenav" src="/images/kvele.svg" style="display:inline-block" target="_blank"></a>
-                <a href="/">Kvelíere</a>
+        $if(thought)$
+        <div id="thoughtbar">
+            <div id="thoughtbar-title">
+                Thought Cabinet
             </div>
-        </header> -->
-
+            <div id="thought">
+                $if(thought)$
+                    $thought$
+                $endif$
+            </div>
+        </div>
+        $endif$
         <main role="main">
-            <h1>$title$</h1>
+            <div id="title">$title$</div>
+            <div id="description">
+                $if(description)$
+                    $description$
+                $endif$
+            </div>
+            <div id="details">
+                $if(dates)$
+                    Posted on $date$
+                $endif$
+                <br>
+                $if(author)$
+                    By $author$
+                $endif$
+                <br>
+                $if(tags)$
+                    Tags: $tags$
+                $endif$
+            </div>
+            $if(logo)$
+            <img src=$logo$ id="pagelogo" style="width:8%">
+            $endif$
             <div id="markdownBody">
                 $body$
             </div>
         </main>
 
         <footer>
-            © 2022 Collin brown
+            © 2022 Collin Brown
         </footer>
     </body>
 </html>

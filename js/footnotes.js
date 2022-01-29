@@ -1,10 +1,18 @@
+/* footnotes.js: heavily based on sidenotes.js from Gwern.net; he describes his as "a standalone JS library for parsing HTML documents with Pandoc-style footnotes and
+dynamically repositioning them into the left/right margins, when browser windows are wide enough."
+
+license: MIT (derivative of footnotes.js (Gwern.net), itself a derivative of footnotes.js (Tufte-CSS), which is PD)
+*/
+
 Footnotes = {
 
     /* Relationship to Rest of Page */
     potentialCollisionElements: ".full-width img, .full-width video, .full-width table, .marginnote",
     mediaQueries: {
-		viewportWidthBreakpoint: matchMedia("(max-width: 1760px)")
+		viewportWidthBreakpoint: matchMedia("(max-width: 1260px)")
 	},
+
+    tries: 0,
 
     footnoteSpacing: 60.0,
     footnotePadding: 13.0,
@@ -92,6 +100,13 @@ Footnotes = {
     updateFootnotePositions: () => {
 
         if (Footnotes.mediaQueries.viewportWidthBreakpoint.matches) {
+            // console.log("Window too small for footnotes...");
+            if (tries < 5) {
+                setTimeout(function () {
+                    constructFootnotes();
+                }, 2000);
+                tries++;
+            }
             return;
         }
         
@@ -202,6 +217,13 @@ Footnotes = {
             if (footnoteFootprint.bottom - footnoteFootprint.top > room.floor - room.ceiling)
             {
                 if (nextProscribedRangeAfterFootnote == -1) {
+                    // console.log("Footnotes are getting scrambled.");
+                    if (tries < 5) {
+                        setTimeout(function () {
+                            constructFootnotes();
+                        }, 2000);
+                        tries++;
+                    }
                     return;
                 }
                 
@@ -261,7 +283,7 @@ Footnotes = {
                 nextFootnote.style.top = (parseInt(nextFootnote.style.top) + overlapWithNextFootnote) + "px";
             }
         }
-        
+
         Footnotes.footnoteColumnLeft.style.visibility = "";
         Footnotes.footnoteColumnRight.style.visibility = "";
 
@@ -285,6 +307,9 @@ Footnotes = {
         let markdownBody = document.querySelector("#markdownBody");
 
         if (!markdownBody) {
+            setTimeout(function () {
+                constructFootnotes();
+            }, 2000);
             return;
         }
 
@@ -349,7 +374,7 @@ Footnotes = {
     setup: () => {
         doWhenMatchMedia(Footnotes.mediaQueries.viewportWidthBreakpoint, "Footnotes.rewriteHashForCurrentMode", (mediaQuery) => {
             let regex = new RegExp(mediaQuery.matches ? "#sn[0-9]" : "#fn[0-9]");
-			let prefix = (mediaQuery.matches ? "#fn" : "#sn");
+			// let prefix = (mediaQuery.matches ? "#fn" : "#sn");
 
             if (location.hash.match(regex)) {
                 if (document.readyState == "complete") {

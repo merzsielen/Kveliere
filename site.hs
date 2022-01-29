@@ -39,40 +39,41 @@ main = do
             route idRoute
             compile copyFileCompiler 
 
-        match (fromList ["about.markdown", "contact.markdown"]) $ do
-            route   $ cleanRoute
+        match (fromList ["about.markdown", "contact.markdown", "the-little-brown-book.markdown"]) $ do
+            route   $ setExtension "html"
             compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext
                 >>= relativizeUrls
+        
+        ficTags <- buildTags "fiction/*" (fromCapture "tags/*.html")
 
-        match "posts/*" $ do
-            route $ cleanRoute
-            compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/post.html"    postCtx
-                >>= loadAndApplyTemplate "templates/default.html" postCtx
-                >>= relativizeUrls
-
-        create ["archive.html"] $ do
-            route cleanRoute
+        tagsRules ficTags $ \tag pattern -> do
+            let title = "Fiction tagged \"" ++ tag ++ "\""
+            route idRoute
             compile $ do
-                posts <- recentFirst =<< loadAll "posts/*"
-                let archiveCtx =
-                        listField "posts" postCtx (return posts) `mappend`
-                        constField "title" "Archives"            `mappend`
-                        defaultContext
+                fiction <- recentFirst =<< loadAll pattern
+                let ctx = constField "title" title
+                        `mappend` listField "fiction" postCtx (return fiction)
+                        `mappend` defaultContext
 
                 makeItem ""
-                    >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                    >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                    >>= loadAndApplyTemplate "templates/tag.html" ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
                     >>= relativizeUrls
 
+        match "fiction/*" $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/fiction.html"    (postCtxWithTags ficTags)
+                >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags ficTags)
+                >>= relativizeUrls
 
         match "index.html" $ do
             route idRoute
             compile $ do
-                posts <- recentFirst =<< loadAll "posts/*"
+                -- posts <- recentFirst =<< loadAll "posts/*"
                 let indexCtx =
-                        listField "posts" postCtx (return posts) `mappend`
+                        -- listField "posts" postCtx (return posts) `mappend`
                         defaultContext
 
                 getResourceBody
@@ -89,18 +90,21 @@ postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
-cleanRoute :: Routes 
-cleanRoute = customRoute createIndexRoute
-    where
-        createIndexRoute ident = takeDirectory p
-                                    </> takeBaseName p
-                                    </> "index.html"
-                                where p = toFilePath ident
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags = tagsField "tags" tags `mappend` postCtx
 
-cleanIndexUrls :: Item String -> Compiler (Item String)
-cleanIndexUrls = return . fmap (withUrls clean)
-    where
-        idx = "index.html"
-        clean url
-            | idx `isSuffixOf` url = take (length url - length idx) url
-            | otherwise            = url
+-- cleanRoute :: Routes 
+-- cleanRoute = customRoute createIndexRoute
+--     where
+--         createIndexRoute ident = takeDirectory p
+--                                     </> takeBaseName p
+--                                     </> "index.html"
+--                                 where p = toFilePath ident
+
+-- cleanIndexUrls :: Item String -> Compiler (Item String)
+-- cleanIndexUrls = return . fmap (withUrls clean)
+--     where
+--         idx = "index.html"
+--         clean url
+--             | idx `isSuffixOf` url = take (length url - length idx) url
+--             | otherwise            = url
