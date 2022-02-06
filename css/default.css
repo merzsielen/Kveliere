@@ -196,6 +196,14 @@ svg {
   }
 }
 
+/* Plain Dropcaps */
+#intro:first-child:first-letter{
+  float:left;
+  font-size:50px;
+  margin-top: -10px;
+  margin-right:5px;
+  color:#013220;
+}
 
 /* Page Logos */
 #pagelogo {
