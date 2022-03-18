@@ -33,27 +33,27 @@ In which a Chronicler travels through the Riverlands in search of the folk hero,
 
 However, the Khal she finds is not who she expected, and the weight of his life can be seen in each wrinkle and scar he now carries, so near to the end.
 
-- [Chapter One: A Tapestry of Stars](/posts/2021-07-25-tapestry-one.html)
+- [Chapter One: A Tapestry of Stars](/fiction/2021-07-25-tapestry-one.html)
 
-- [Chapter Two: A Moment by the Sea](/posts/2021-07-26-tapestry-two.html)
+- [Chapter Two: A Moment by the Sea](/fiction/2021-07-26-tapestry-two.html)
 
-- [Chapter Three: On the Path](/posts/2021-07-27-tapestry-three.html)
+- [Chapter Three: On the Path](/fiction/2021-07-27-tapestry-three.html)
 
-- [Chapter Four: A Tale From His Youth](/posts/2021-07-28-tapestry-four.html)
+- [Chapter Four: A Tale From His Youth](/fiction/2021-07-28-tapestry-four.html)
 
-- [Chapter Five: Along the River Féar](/posts/2021-07-29-tapestry-five.html)
+- [Chapter Five: Along the River Féar](/fiction/2021-07-29-tapestry-five.html)
 
-- [Chapter Six: The Gift of the Otherworld](/posts/2021-07-30-tapestry-six.html)
+- [Chapter Six: The Gift of the Otherworld](/fiction/2021-07-30-tapestry-six.html)
 
-- [Chapter Seven: Festival of the Tides](/posts/2021-08-01-tapestry-seven.html)
+- [Chapter Seven: Festival of the Tides](/fiction/2021-08-01-tapestry-seven.html)
 
-- [Chapter Eight: Among Auroral Heights](/posts/2021-08-02-tapestry-eight.html)
+- [Chapter Eight: Among Auroral Heights](/fiction/2021-08-02-tapestry-eight.html)
 
-- [Chapter Nine: Pierced to the Root](/posts/2021-08-03-tapestry-nine.html)
+- [Chapter Nine: Pierced to the Root](/fiction/2021-08-03-tapestry-nine.html)
 
-- [Chapter Ten: At the Eonóll Inn](/posts/2021-08-04-tapestry-ten.html)
+- [Chapter Ten: At the Eonóll Inn](/fiction/2021-08-04-tapestry-ten.html)
 
-- [Chapter Eleven: Our Illusions of Beauty](/posts/2021-08-05-tapestry-eleven.html)
+- [Chapter Eleven: Our Illusions of Beauty](/fiction/2021-08-05-tapestry-eleven.html)
 
 ## Arc Two: Moonpath to Gaelica
 
@@ -61,31 +61,31 @@ In which a young Khal travels towards Mount Vómakháll with his caravan, only t
 
 However, a burden has settled on young Khal's shoulders that will plague him until his dying day, and for the teller of this tale, that day seems fast approaching.
 
-- [Chapter Twelve: Moonpath](/posts/2021-08-06-tapestry-twelve.html)
+- [Chapter Twelve: Moonpath](/fiction/2021-08-06-tapestry-twelve.html)
 
-- [Chapter Thirteen: An Ancient and Ruinous Whisper](/posts/2021-08-07-tapestry-thirteen.html)
+- [Chapter Thirteen: An Ancient and Ruinous Whisper](/fiction/2021-08-07-tapestry-thirteen.html)
 
-- [Chapter Fourteen: Branches of the Ashen Tree](/posts/2021-08-08-tapestry-fourteen.html)
+- [Chapter Fourteen: Branches of the Ashen Tree](/fiction/2021-08-08-tapestry-fourteen.html)
 
-- [Chapter Fifteen: Into These Tales](/posts/2021-08-09-tapestry-fifteen.html)
+- [Chapter Fifteen: Into These Tales](/fiction/2021-08-09-tapestry-fifteen.html)
 
-- [Chapter Sixteen: Fragments](/posts/2021-08-10-tapestry-sixteen.html)
+- [Chapter Sixteen: Fragments](/fiction/2021-08-10-tapestry-sixteen.html)
 
-- [Chapter Seventeen: The Whisper and The Worm](/posts/2021-08-11-tapestry-seventeen.html)
+- [Chapter Seventeen: The Whisper and The Worm](/fiction/2021-08-11-tapestry-seventeen.html)
 
-- [Chapter Eighteen: A Chance Reunion](/posts/2021-08-12-tapestry-eighteen.html)
+- [Chapter Eighteen: A Chance Reunion](/fiction/2021-08-12-tapestry-eighteen.html)
 
-- [Chapter Nineteen: Blade and Star](/posts/2021-08-13-tapestry-nineteen.html)
+- [Chapter Nineteen: Blade and Star](/fiction/2021-08-13-tapestry-nineteen.html)
 
-- [Chapter Twenty: The Turning of the World](/posts/2021-08-14-tapestry-twenty.html)
+- [Chapter Twenty: The Turning of the World](/fiction/2021-08-14-tapestry-twenty.html)
 
-- [Chapter Twenty-One: The Songs of Thelair](/posts/2021-08-15-tapestry-twenty-one.html)
+- [Chapter Twenty-One: The Songs of Thelair](/fiction/2021-08-15-tapestry-twenty-one.html)
 
-- [Chapter Twenty-Two: The Slow Departure of Beauty](/posts/2021-08-15-tapestry-twenty-two.html)
+- [Chapter Twenty-Two: The Slow Departure of Beauty](/fiction/2021-08-15-tapestry-twenty-two.html)
 
 ## Arc Three: Tides of Starlight
 
-- [Chapter Twenty-Three: A Time for Silence](/posts/2021-08-16-tapestry-twenty-three.html)
+- [Chapter Twenty-Three: A Time for Silence](/fiction/2021-08-16-tapestry-twenty-three.html)
 
 - More Chapters to be Released
 
