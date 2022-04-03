@@ -35,6 +35,10 @@ main = do
             route   idRoute
             compile compressCssCompiler
 
+        match "pdfs/*" $ do
+            route   idRoute
+            compile copyFileCompiler
+
         match "favicon.ico" $ do
             route idRoute
             compile copyFileCompiler 
@@ -64,8 +68,31 @@ main = do
         match "fiction/*" $ do
             route $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/fiction.html"    (postCtxWithTags ficTags)
+                >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags ficTags)
                 >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags ficTags)
+                >>= relativizeUrls
+
+        essTags <- buildTags "essays/*" (fromCapture "tags/*.html")
+
+        tagsRules essTags $ \tag pattern -> do
+            let title = "Essays tagged \"" ++ tag ++ "\""
+            route idRoute
+            compile $ do
+                essays <- recentFirst =<< loadAll pattern
+                let ctx = constField "title" title
+                        `mappend` listField "essays" postCtx (return essays)
+                        `mappend` defaultContext
+
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/tag.html" ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
+                    >>= relativizeUrls
+
+        match "essays/*" $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags essTags)
+                >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags essTags)
                 >>= relativizeUrls
 
         match "index.html" $ do

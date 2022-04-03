@@ -1,7 +1,23 @@
 <ul>
-    $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
-        </li>
-    $endfor$
+    $if(posts)$
+        $for(posts)$
+            <li>
+                <a href="$url$">$title$</a> - $date$
+            </li>
+        $endfor$
+    $endif$
+    $if(fiction)$
+        $for(fiction)$
+            <li>
+                <a href="$url$">$title$</a> - $date$
+            </li>
+        $endfor$
+    $endif$
+    $if(essays)$
+        $for(essays)$
+            <li>
+                <a href="$url$">$title$</a> - $date$
+            </li>
+        $endfor$
+    $endif$
 </ul>
