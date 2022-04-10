@@ -1,7 +1,7 @@
 ---
 title: "Ode to Armok"
 author: Collin Brown
-tags: gaming, dwarf fortress, review, love letter
+tags: gaming, dwarf fortress, review, love letter, other
 ---
 
 I would not be the first to say that Dwarf Fortress is a game unlike any other. The depth of its gameplay, the interweaving of complex mechanics, the simple pleasures of watching drunk cats stumble about taverns, having licked a bit too much dwarven beer from their fur—it all builds an unsurpassable world in which you, as a player, may simply dip a toe. You might build the greatest fortress ever known, with a moat of lava around the golden walls, or you may become the most renowned hero, having slain the old beasts of the deep, but you won’t have witnessed half of what the world has to offer: the wanderings of a dwarven hunter through the backwaters, searching for the child kidnapped two years prior by the encroaching goblin horde; or perhaps you missed the elf, taken prisoner in war in her youth, who rose to become queen of the very people who stole her away; the reunion of two children, separated by the destruction of their home by a wandering colossus; the song sung in a tavern by a gathering of weary dwarves as night descends upon the hillocks.

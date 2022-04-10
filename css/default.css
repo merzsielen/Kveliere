@@ -60,21 +60,15 @@
   --KVLR-thought-text-color: #444;
 
   --KVLR-thought-background-color:  rgb(204, 204, 204);
-  --KVLR-body-link-hover-color: #888;
+  --KVLR-body-link-color: #209d6f;
+  --KVLR-body-link-hover-color: #005d3b;
+  --KVLR-body-link-visited-color: #005d3b;
   --KVLR-pre-element-background-color: #fafafa;
   --KVLR-pre-element-border-color: #c8c8c8;
-  --KVLR-code-element-background-color: #fafafa;
-  --KVLR-code-element-border-color: #c8c8c8;
-  --KVLR-table-cell-vertical-border-color: var(--KVLR-body-background-color);
-  --KVLR-table-row-horizontal-border-color: #000;
-  --KVLR-table-caption-border-color: #000;
-  --KVLR-table-full-width-background-color: var(--KVLR-body-background-color);
-  --KVLR-table-border-color: #000;
   --KVLR-sidenote-self-link-border-color: #aaa;
   --KVLR-sidenote-border-color: #aaa;
   --KVLR-sidenote-highlight-box-shadow-color: #aaa;
   --KVLR-sidenote-highlight-background-color: var(--KVLR-body-background-color);
-  --KVLR-object-popup-background-color: #fff;
   --KVLR-body-background-color: #fff;
   --KVLR-H1-top-border-color: #000;
   --KVLR-H1-bottom-border-color: #888;
@@ -93,6 +87,7 @@ html {
   font-size: 20px;
   font-weight: 400;
   font-family: var(--KVLR-tinos-font-family)
+  
 }
 
 /* Article */
@@ -103,6 +98,16 @@ body {
 
 svg {
   fill: currentColor;
+}
+
+a:link {
+  color: var(--KVLR-body-link-color);
+}
+a:hover {
+  color: var(--KVLR-body-link-hover-color);
+}
+a:visited {
+  color: var(--KVLR-body-link-visited-color);
 }
 
 
@@ -197,7 +202,7 @@ svg {
 }
 
 /* Plain Dropcaps */
-#intro:first-child:first-letter{
+#intro:first-letter{
   float:left;
   font-size:50px;
   margin-top: -10px;
@@ -216,22 +221,39 @@ svg {
 
 /* Navigations */
 #sidebar {
+  display: block;
   font-family: var(--KVLR-tinos-font-stack);
-  font-variant: bold;
   float: left;
   text-align: left;
-  margin: 2.0em 0 0em -25%;
   background-color: rgb(204, 204, 204);
   border: 0.2rem inset #000;
+  position: relative;
+  z-index: 3;
+  margin: 0;
+}
+#sidebarouter {
+    margin: 0;
+    padding: 0 10px 5px 0;
 }
 #sidebar a {
   display: block;
 }
+#sidebarouter {
+  display: block;
+  float: left;
+  text-align: left;
+}
 
 @media only screen and (min-width: 650px) {
+  @media only screen and (min-width: 1205px) {
+    #sidebarouter {
+      margin: 0 0 0 -25%;
+    }
+  }
   #sidebar {
     padding: 0 20px 20px 20px;
     width: 100px;
+    padding: 10px 15px 10px 10px;
   }
   #sidebar a#logo {
     margin: 1em 0 2em 0;
@@ -247,8 +269,32 @@ svg {
     margin-top: 0.55em;
   }
 }
+@media only screen and (max-width: 649px) {
+  #sidebar {
+    width: 50px;
+    padding: 10px 15px 10px 10px;
+    font-size: 12px;
+    border: 0.1rem inset #000;
+  }
+  #sidebar a#logo {
+    margin: 0 0 0 0;
+  }
+  #sidebar a#logo svg {
+    width: 16px;
+  }
+  #sidebar a.link,
+  #sidebar a.link {
+    color: black;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+}
 
 #sidebar a:hover {
+  color: var(--KVLR-body-link-hover-color);
+}
+#smallsidebar a:hover {
   color: var(--KVLR-body-link-hover-color);
 }
 
@@ -320,7 +366,6 @@ footer {
   color: #555;
 }
 
-
 /* Headings */
 #title {
   overflow: auto;
@@ -389,6 +434,7 @@ h1::after {
   left: 0;
   bottom: 0.05em;
   pointer-events: none;
+  z-index: 2;
 }
 
 h2::after {
@@ -418,6 +464,23 @@ h6 {
   font-style: italic;
 }
 
+#table-container {
+  width: 100% !important;
+}
+table {
+  vertical-align: center;
+  overflow-x: auto;
+  color:#000000;
+  font-size:12pt;
+  table-layout: auto;
+  font-family:"Times New Roman";
+}
+
+@media (max-width: 600px) {
+  #table-container {
+    overflow-x: scroll;
+  }
+}
 
 /* Thoughts */
 /* I want to add a little tweet-like thing
@@ -600,6 +663,24 @@ will appear on the front page. */
 #sidenote-column-right .sidenote > .footnote-self-link {
   left: 0;
 }
+.footnote-ref sup:before {
+  content: '[';
+}
+.footnote-ref sup:after {
+  content: ']';
+}
+[role="doc-endnotes"]::before {
+  content: "Footnotes";
+  display: block;
+  padding-top: 40px;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  line-height: 1.15;
+  font-weight: 600;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
 
 /* Sidenote Screens */
 @media only screen and (max-width: 1530px) {
@@ -651,62 +732,9 @@ will appear on the front page. */
 
 
 /* Index Columns */
-#navcolumn {
-  border: 0.3rem inset #888;
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  top: 0;
-  padding: 0px 24px 10px 24px;
-}
-  
-#navrow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Metadata */
-#page-metadata hr {
-  display: none;
-}
-#page-metadata {
-  margin: 0 0 2rem 0;
-  overflow: auto;
-  font-size: 0.95em;
-  line-height: 1.5;
-}
-#page-metadata p {
-  text-align: left;
-}
-
-#page-metadata #page-description {
-  display: block;
-  margin: 0 auto 0.75em auto;
-  font-style: italic;
-  text-align: justify;
-}
-#page-metadata #page-description em {
-  font-style: normal;
-}
-
-#page-metadata #page-description ~ * {
-  font-size: 0.9em;
-}
-
-#page-metadata #page-description + br {
-  display: none;
-}
-
-#page-metadata-block span:nth-of-type(n+3) {
-  white-space: nowrap;
-}
-
-#page-tags,
-#page-metadata-block {
-    hyphens: none;
-}
+/* #navsection {
+   This is currently just a placeholder.
+} */
 
 /* Main Content */
 .markdownBody {
@@ -734,14 +762,6 @@ will appear on the front page. */
       .markdownBody {
           line-height: 1.60;
       }
-  }
-  @media only screen and (max-width: 500px) {
-    #indimage {
-        display: none;
-    }
-    #title {
-      font-size: 1.2rem;
-    }
   }
 }
 
@@ -775,5 +795,11 @@ body.index #markdownBody section > h1:first-child a::after {
 @media only screen and (max-width: 649px) {
   body.index #back-to-top {
       left: unset;
+  }
+  #indimage {
+    display: none;
+  }
+  #title {
+    font-size: 1.2rem;
   }
 }

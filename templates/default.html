@@ -10,16 +10,6 @@
         <link rel="stylesheet" href="/css/default.css" />
     </head>
     <body>
-        <div id="sidebar">
-            <a id="logo" href="/" title="Home">
-                <img src="/images/kvele.svg" width="100" height="110" alt="Kvelíere Logo">
-            </a>
-            <div id="sidebar-links">
-                <a class="link" href="/about.html" title="Who am I?">ABOUT</a>
-                <a class="link" href="/contact.html" title="How can you contact me?">CONTACT</a>
-                <a class="link" href="/the-little-brown-book.html" title="Where are my essays?">THE LITTLE BROWN BOOK</a>
-            </div>
-        </div>
         $if(thought)$
         <div id="thoughtbar">
             <div id="thoughtbar-title">
@@ -55,8 +45,22 @@
             $if(logo)$
             <img src=$logo$ id="pagelogo" style="width:8%">
             $endif$
+            <div id="sidebarouter">
+                <div id="sidebar">
+                    <a id="logo" href="/" title="Home">
+                        <img src="/images/kvele.svg" alt="Kvelíere Logo">
+                    </a>
+                    <div id="sidebar-links">
+                        <a class="link" href="/about.html" title="Who am I?">ABOUT</a>
+                        <a class="link" href="/contact.html" title="How can you contact me?">CONTACT</a>
+                        <a class="link" href="/the-little-brown-book.html" title="Where are my essays?">THE LITTLE BROWN BOOK</a>
+                    </div>
+                </div>
+            </div>
             <div id="markdownBody">
-                $body$
+                <p id="intro">
+                    $body$
+                </p>
             </div>
         </main>
 
