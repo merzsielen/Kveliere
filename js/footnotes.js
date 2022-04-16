@@ -12,8 +12,6 @@ Footnotes = {
 		viewportWidthBreakpoint: matchMedia("(max-width: 1260px)")
 	},
 
-    tries: 0,
-
     footnoteSpacing: 60.0,
     footnotePadding: 13.0,
     footnoteMaxHeight: 600.0,
@@ -98,17 +96,6 @@ Footnotes = {
 
     /* Set All Footnote Positions */
     updateFootnotePositions: () => {
-
-        if (Footnotes.mediaQueries.viewportWidthBreakpoint.matches) {
-            // console.log("Window too small for footnotes...");
-            if (tries < 5) {
-                setTimeout(function () {
-                    constructFootnotes();
-                }, 2000);
-                tries++;
-            }
-            return;
-        }
         
         // Footnotes.updatedCollapsedFootnotes();
 
@@ -215,18 +202,7 @@ Footnotes = {
                     room.ceiling = previousFootnoteBottom;
             }
             if (footnoteFootprint.bottom - footnoteFootprint.top > room.floor - room.ceiling)
-            {
-                if (nextProscribedRangeAfterFootnote == -1) {
-                    // console.log("Footnotes are getting scrambled.");
-                    if (tries < 5) {
-                        setTimeout(function () {
-                            constructFootnotes();
-                        }, 2000);
-                        tries++;
-                    }
-                    return;
-                }
-                
+            {   
                 footnote.style.top = (proscribedVerticalRanges[nextProscribedRangeAfterFootnote].bottom + Footnotes.footnoteSpacing) + "px";
                 i--;
                 continue;

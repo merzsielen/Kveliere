@@ -15,7 +15,7 @@ main = do
     E.setLocaleEncoding E.utf8
 
     hakyll $ do
-        match "images/*" $ do
+        match "images/**" $ do
             route   idRoute
             compile copyFileCompiler
 
@@ -23,11 +23,7 @@ main = do
             route   idRoute
             compile copyFileCompiler
 
-        match "font/roboto-mono/*" $ do
-            route   idRoute
-            compile copyFileCompiler
-
-        match "font/tinos/*" $ do
+        match "font/**" $ do
             route   idRoute
             compile copyFileCompiler
 
@@ -35,7 +31,7 @@ main = do
             route   idRoute
             compile compressCssCompiler
 
-        match "pdfs/*" $ do
+        match "pdfs/**" $ do
             route   idRoute
             compile copyFileCompiler
 
@@ -65,7 +61,7 @@ main = do
                     >>= loadAndApplyTemplate "templates/default.html" ctx
                     >>= relativizeUrls
 
-        match "fiction/*" $ do
+        match "fiction/**" $ do
             route $ setExtension "html"
             compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags ficTags)
@@ -88,7 +84,7 @@ main = do
                     >>= loadAndApplyTemplate "templates/default.html" ctx
                     >>= relativizeUrls
 
-        match "essays/*" $ do
+        match "essays/**" $ do
             route $ setExtension "html"
             compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags essTags)
