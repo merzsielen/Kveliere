@@ -96,6 +96,10 @@ body {
   font-size: var(--KVLR-body-text-font-size);
 }
 
+rt {
+	font-size: 15px;
+}
+
 svg {
   fill: currentColor;
 }
