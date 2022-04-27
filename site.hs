@@ -19,7 +19,7 @@ main = do
             route   idRoute
             compile copyFileCompiler
 
-        match "js/*" $ do
+        match "js/**" $ do
             route   idRoute
             compile copyFileCompiler
 
@@ -27,7 +27,7 @@ main = do
             route   idRoute
             compile copyFileCompiler
 
-        match "css/*" $ do
+        match "css/**" $ do
             route   idRoute
             compile compressCssCompiler
 
@@ -39,7 +39,7 @@ main = do
             route idRoute
             compile copyFileCompiler 
 
-        match (fromList ["about.markdown", "contact.markdown", "the-little-brown-book.markdown"]) $ do
+        match (fromList ["about.markdown", "contact.markdown", "flow.markdown"]) $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext
