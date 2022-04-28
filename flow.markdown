@@ -23,23 +23,30 @@ I want to check to see how slow Chart.js, so bear with me.
     var ctx = document.getElementById("testChart");
     const data = {
         datasets: [{
-        label: 'm',
-        data: [{
-            x: -10,
-            y: 0
-        }],
-        backgroundColor: 'rgb(255, 99, 132)'
+            label: 'm',
+            data: [{
+                x: 2.62041346154,
+                y: 10,
+                r: 10
+            }],
+            backgroundColor: 'rgb(255, 0, 0)'
+        }, {
+            label: 'n',
+            data: [{
+                x: 2,
+                y: 10,
+                r: 10
+            }],
+            backgroundColor: 'rgb(0, 255, 0)'
         }],
     };
     const config = {
-        type: 'scatter',
+        type: 'bubble',
         data: data,
         options: {
             scales: {
-                x: {
-                    type: 'linear',
-                    position: 'bottom'
-                }
+                x: { display: true, title: { display: true, text: 'Distinctiveness' } },
+                y: { display: true, title: { display: true, text: 'Stability' } }
             }
         } 
     };
