@@ -1,5 +1,6 @@
 ---
 title: "Principia Alchemica"
+details: true
 author: Collin Brown
 words: 9311
 tags: history, alchemy, Isaac Newton

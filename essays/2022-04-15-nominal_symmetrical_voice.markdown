@@ -1,5 +1,6 @@
 ---
 title: "Nominal Symmetrical Voice"
+details: true
 author: Collin Brown
 words: 3673
 tags: conlang, linguistics

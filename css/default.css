@@ -214,6 +214,15 @@ a:visited {
   color:#013220;
 }
 
+/* Repo */
+#repo {
+  padding-top: 10px;
+  display: block;
+  right: 5%;
+  position: absolute;
+  width: 45%;
+}
+
 /* Page Logos */
 #pagelogo {
   display: block;
@@ -221,7 +230,6 @@ a:visited {
   margin-right: auto;
   text-align: center;
 }
-
 
 /* Navigations */
 #sidebar {
@@ -251,16 +259,15 @@ a:visited {
 @media only screen and (min-width: 650px) {
   @media only screen and (min-width: 1205px) {
     #sidebarouter {
-      margin: -10% 0 0 -25%;
+      margin: 10% 0 0 -25%;
     }
   }
   #sidebar {
-    padding: 0 20px 20px 20px;
     width: 100px;
-    padding: 10px 15px 10px 10px;
+    padding: 0 15px 10px 10px;
   }
   #sidebar a#logo {
-    margin: 1em 0 2em 0;
+    margin: 0em 0 2em 0;
   }
   #sidebar a#logo svg {
     width: 64px;
@@ -269,8 +276,7 @@ a:visited {
   #sidebar a.link {
     color: black;
     text-decoration: none;
-    padding-top: 0.45em;
-    margin-top: 0.55em;
+    padding-top: 0.75em;
   }
 }
 @media only screen and (max-width: 649px) {
@@ -382,12 +388,25 @@ footer {
   padding: 0px 0px 10px 0px;
 }
 
+#subtitle {
+  overflow: auto;
+  text-align: center;
+  vertical-align: top;
+  font-variant: small-caps;
+  font-size: 2.4rem;
+  bottom: 0.5em;
+  color: #555;
+  border-bottom: 0.1rem solid #444;
+  padding: 0px 0px 10px 0px;
+}
+
 #details {
   overflow: auto;
   text-align: left;
   vertical-align: top;
   color: #888;
   padding: 0px 0px 20px 0px;
+  width: 45%;
 }
 
 header {

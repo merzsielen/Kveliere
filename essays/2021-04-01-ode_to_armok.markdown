@@ -1,5 +1,6 @@
 ---
 title: "Ode to Armok"
+details: true
 author: Collin Brown
 tags: gaming, dwarf fortress, review, love letter, other
 ---

@@ -42,6 +42,29 @@
         $endif$
         <main role="main">
             <div id="title">$title$</div>
+            $if(subtitle)$
+            <div id="subtitle">$subtitle$</div>
+            $endif$
+            <div id="sidebarouter">
+                <div id="sidebar">
+                    <a id="logo" href="/" title="Home">
+                        <img src="/images/kvele.svg" alt="Kvelíere Logo">
+                    </a>
+                    <div id="sidebar-links">
+                        <a class="link" href="/about.html" title="Who am I?">ABOUT</a>
+                        <a class="link" href="/contact.html" title="How can you contact me?">CONTACT</a>
+                        <a class="link" href="https://www.patreon.com/collinbrown" title="How can you support me?">PATREON</a>
+                    </div>
+                </div>
+            </div>
+            $if(details)$
+            <div id="repo">
+                $if(repo)$
+                    <div class="github-card" data-github=$repo$ data-width="400" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                    <br>
+                $endif$
+            </div>
             <div id="description">
                 $if(description)$
                     $description$
@@ -64,21 +87,10 @@
                     Tags: $tags$
                 $endif$
             </div>
+            $endif$
             $if(logo)$
             <img src=$logo$ id="pagelogo" style="width:8%">
             $endif$
-            <div id="sidebarouter">
-                <div id="sidebar">
-                    <a id="logo" href="/" title="Home">
-                        <img src="/images/kvele.svg" alt="Kvelíere Logo">
-                    </a>
-                    <div id="sidebar-links">
-                        <a class="link" href="/about.html" title="Who am I?">ABOUT</a>
-                        <a class="link" href="/contact.html" title="How can you contact me?">CONTACT</a>
-                        <a class="link" href="https://www.patreon.com/collinbrown" title="How can you support me?">PATREON</a>
-                    </div>
-                </div>
-            </div>
             <div id="markdownBody">
                 <p id="intro">
                     $body$

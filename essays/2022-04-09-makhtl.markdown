@@ -1,5 +1,6 @@
 ---
 title: "Makhtl"
+details: true
 author: Collin Brown
 words: 15474
 tags: conlang, linguistics, writing systems
