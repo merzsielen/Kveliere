@@ -91,6 +91,29 @@ main = do
                 >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags essTags)
                 >>= relativizeUrls
 
+        clongTags <- buildTags "conlangs/*" (fromCapture "tags/*.html")
+
+        tagsRules clongTags $ \tag pattern -> do
+            let title = "Conlangs tagged \"" ++ tag ++ "\""
+            route idRoute
+            compile $ do
+                conlangs <- recentFirst =<< loadAll pattern
+                let ctx = constField "title" title
+                        `mappend` listField "conlangs" postCtx (return conlangs)
+                        `mappend` defaultContext
+
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/tag.html" ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
+                    >>= relativizeUrls
+
+        match "conlangs/**" $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags essTags)
+                >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags essTags)
+                >>= relativizeUrls
+
         match "index.html" $ do
             route idRoute
             compile $ do
