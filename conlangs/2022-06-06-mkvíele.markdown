@@ -283,7 +283,7 @@ Another holdover from Mkvíele’s more agglutinative past is its possessive suf
 
 However, Mkvíele does require possessive suffixes on certain possessed nouns, depending on their alienability and the definiteness of their possessor. Non-alienable nouns, such as body parts or family members, must take the impersonal possessive suffix if their possessor is not definite. For example, a sentence like “a person’s older brother” would be ⟨íerre tskore⟩, but if that “person” becomes definite, it is ⟨íerrele tskoyen⟩.
 
-Alienability becomes a little more complicated when we take into account possessive suffix stacking. Specifically, a definite possessive suffix can get added onto the indefinite possessive suffix when the circumstances shift the possessee from inalienable to alienable. For (an admittedly gruesome) example, we might look at ⟨íe⟩, or “finger.” If it is my finger from my body, it is ⟨íen⟩, from ⟨íe + en⟩, but if it is someone else’s finger that I possess, then it is ⟨íeren⟩, from from ⟨íe + re + en⟩. This is how one distinguishes from an inalienable possession of which the possessor is the originator (or proper owner) and once inalienable possessions that have been—well, alienated.
+Alienability becomes a little more complicated when we take into account possessive suffix stacking. Specifically, a definite possessive suffix can get added onto the indefinite possessive suffix when the circumstances shift the possessee from inalienable to alienable. For (an admittedly gruesome) example, we might look at ⟨íe⟩, or “finger.” If it is my finger from my body, it is ⟨íen⟩, from ⟨íe + en⟩, but if it is someone else’s finger that I possess, then it is ⟨íeren⟩, from ⟨íe + re + en⟩. This is how one distinguishes from an inalienable possession of which the possessor is the originator (or proper owner) and once inalienable possessions that have been—well, alienated.
 
 ##
 
@@ -755,7 +755,7 @@ These are fairly transparently derived from the locative, ablative, elative, ins
 
 Because of their origin, converbs require certain syntax and morphology in the sentences featuring them: all clauses with converbs become SVO, and their main verb is conjugated analytically, meaning a pronoun is mandatory (if the subject itself is not present). If ‘C’ is the converb, ‘S₁’ the subject of the main verb, and ‘S₂’ the subject of the converb—then, when S₁ is the same as S₂, the word order is SCVO. Otherwise, when S₁ and S₂ are different, the word order can either be S₂CVS₁O or S₂CS₁VO.
 
-An exception to these rules is found when the converb and the main verb share the same subject and the converb is intransitive. In this case, the word order remains SV, but the main verb can be conjugated analytically and the converb can come directly after it. This would be represented as an SVCO order. It is fairly common, especially colloquially.
+An exception to these rules is found when the converb and the main verb share the same subject and the converb is intransitive. In this case, the word order remains SV, but the main verb can be conjugated synthetically and the converb can come directly after it. This would be represented as an SVCO order. It is fairly common, especially colloquially.
 
 We’ll touch more on these syntax rules when we reach some examples.
 
@@ -905,13 +905,13 @@ In short, the purposive converb marks the motive behind the main verb; the causa
 
 ##
 
-> Riddelle bharvale vála magraleule.
+> Riddelle bharvale vála magraleure.
 
-> /ritːeɬe varɯvale vaːla makɯralɯle/
+> /ritːeɬe varɯvale vaːla makɯralɯre/
 
-> [ritːeɬe varvale vaːla makɾ̥alɯle]
+> [ritːeɬe varvale vaːla makɾ̥alɯre]
 
-> ridd-elle	bhar-va-le		vá-la		magra-leu-le 
+> ridd-elle	bhar-va-le		vá-la		magra-leu-re 
 
 > get-PURP	seed-OBL-DEF	go-IMP	house-ALL-DEF
 
@@ -977,7 +977,7 @@ We’ll cover other valency modifiers at some point, but for now know that this 
 
 There are a few kinds of particles that come right before or after a verb and modify its meaning or add a bit of nuance. Broadly speaking, they fall under two banners: those which add or specify some information and those which alter the type of sentence.
 
-In the first camp, you have particles like the clausal determiner, ⟨le⟩; the affirmative, ⟨re⟩; the two emphatics, ⟨sá⟩ and ⟨né⟩; and the explanation marker, ⟨an⟩, among others. In the latter, you have the interrogative use of ⟨an⟩; the more common interrogative, ⟨ó⟩; the uncertainty markern ⟨óno⟩; the negative marker, ⟨yá⟩; and a few others. I’ll provide a table of the most common verb-related particles and their uses below, starting with the first group and leading into the second.
+In the first camp, you have particles like the clausal determiner, ⟨le⟩; the affirmative, ⟨re⟩; the two emphatics, ⟨sá⟩ and ⟨né⟩; and the explanation marker, ⟨an⟩, among others. In the latter, you have the interrogative use of ⟨an⟩; the more common interrogative, ⟨ó⟩; the uncertainty marker, ⟨óno⟩; the negative marker, ⟨yá⟩; and a few others. I’ll provide a table of the most common verb-related particles and their uses below, starting with the first group and leading into the second.
 
 ##
 
@@ -1057,9 +1057,9 @@ As these last two examples show, the full meaning of these particles depends on 
 
 You’ll notice that we included the emphatic particle after the verb when the preceding modality particles were negative: this isn’t strictly necessary (though neither is it for the plain negative), and you’re less likely to see it than you are with the plain negative. That is, most of the time the plain negative is used, it’ll be accompanied by an emphatic particle, but only sometimes are the negative modalities accompanied by emphatic particles.
 
-# 6.1 | ADJPOSITIONS
+# 6.1 | ADPOSITIONS
 
-Mkvíele is—I think it is uncontroversial to say—an unstable language. The old language featured a great many postpositions, many of which are in some stage or another of the process of shifting to prepositions. Thus, Mkvíele features four kinds of adpositions, in order of their frequency: circumpositions, ambipositions, prepositions, and postpositions, with this last category making up the vast majority of adpositions present in the language.
+Mkvíele is—I think it is uncontroversial to say—an unstable language. The old language featured a great many postpositions, many of which are in some stage or another of the process of shifting to prepositions. Thus, Mkvíele features four kinds of adpositions, in ascending order of frequency: circumpositions, ambipositions, prepositions, and postpositions, with this last category making up the vast majority of adpositions present in the language.
 
 This will likely not be a long chapter, though there are some usages of certain adpositions that warrant discussion. We’ll run through each category of adposition in order.
 
@@ -1067,15 +1067,15 @@ This will likely not be a long chapter, though there are some usages of certain 
 
 Mkvíele features only three circumpositions, but they’re important to know as they’re not infrequently used. All three circumpositions require their nouns to be in the accusative case. The three circumpositions are:
 
-## 6.2.1 | EM … MI — “WITH”
+## 6.2.1 | EM … MI — WITH
 
 The circumposition ⟨em … mi⟩ is roughly equivalent to our “with,” indicating accompaniment (in other words, it is a comitative). Unlike “with,” this is not used to indicate instrument or manner (that is reserved for the essive case). This circumposition isn’t very common as its associated case is used more frequently, but you will see it here and there. For example, you might hear ⟨vá haséu em yáve mi⟩ which means “she goes with me.” Here, ⟨vá⟩ is “to go,” ⟨haséu⟩ is “she,” and ⟨yáve⟩ is “me.” As you can see, the noun that the modified noun is accompanying comes before the adpositional phrase.
 
-## 6.2.2 | EM … SO — “LIKE / SIMILAR TO”
+## 6.2.2 | EM … SO — LIKE / SIMILAR TO
 
 The circumposition ⟨em … so⟩ might be translated as “like” or “similar to,” comparing one noun to another. For example, ⟨ite bharsale em vea so⟩ means “the farmer drinks like a fool,” where ⟨vea⟩ is “fool” and ⟨bharsale⟩ is “the farmer.” As you can probably tell, the thing being compared to the modified noun is placed before the adpositional phrase.
 
-## 6.2.3 | YASEM … SO — “UNLIKE / IN CONTRAST TO”
+## 6.2.3 | YASEM … SO — UNLIKE / IN CONTRAST TO
 
 The circumposition ⟨yasem … so⟩ is just the opposite of ⟨em … so⟩. To reuse our example from before, ⟨ite bharsale yasem vea so⟩ means “the farmer drinks unlike a fool.” Admittedly, this doesn’t make as much sense, but it does its job well enough. It can, circumstantially, also be used to indicate contrast. For example, the example above might be interpreted as “the farmer drinks instead of a fool,” though it’d make more sense to see ⟨ite bharsale yasem veale so⟩, or “the farmer drinks instead of the fool.”
 
@@ -1083,7 +1083,7 @@ The circumposition ⟨yasem … so⟩ is just the opposite of ⟨em … so⟩. T
 
 These adpositions, which may appear on either side of the modified noun, make up a not insignificant sliver of all Mkvíele’s adpositions: they are mostly those adpositions which are in the middle phase between being strictly postpositional and being strictly prepositional. In most modern descendents of Mkvíele, the vast majority of adpositions have gone through this transitionary ambipositional phase, and now they mostly (or solely) have prepositions. We won’t cover all the ambipositions of Mkvíele as there are too many, but here are a handful:
 
-## 6.3.1 | YE — FROM / OUT OF / SINCE / BECAUSE / ACCORDING TO”
+## 6.3.1 | YE — FROM / OUT OF / SINCE / BECAUSE / ACCORDING TO
 
 The ambiposition, ⟨ye⟩, has a variety of uses depending on context. It is often used to indicate origin or motion out of something, both literally and metaphorically. This allows it to be used much like our “since.” In addition, it can be used at the end of a phrase to mark cause, much in the same way one would use the causal converb. And lastly, it is often used to indicate the origin of information, much like our “according to.”
 
@@ -1093,7 +1093,7 @@ For an example of the temporal use, we can reuse an old example, ⟨íye ivéya 
 
 Now, we can look at the last two uses of this adposition. These are strictly postpositional, unlike the previous three. A good example of the “cause” use of ⟨ye⟩ can be seen in ⟨iteléye aran svanatséua ye ivrin annéua⟩ which means “I am writing to you because I drank some wine.” As for the use of ⟨ye⟩ to indicate the origin of some information, we might use the example, ⟨tskóyoen ye iteren⟩, which means “according to my older brother, I am drunk.”
 
-## 6.3.2 | THU — “AT / ON / ABOUT / PERTAINING TO”
+## 6.3.2 | THU — AT / ON / ABOUT / PERTAINING TO
 
 The ambiposition ⟨thu⟩ is most often used to indicate location or point in time, though it can also be used to indicate the subject of one’s conversation or some information. For the first use, we might look at the example: ⟨in thu shiníele⟩, which means “I am at the tree.” For a temporal use, ⟨kvéye thu ivríye annéua⟩, which means “I wrote to you at night.”
 
