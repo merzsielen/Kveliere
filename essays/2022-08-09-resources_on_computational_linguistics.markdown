@@ -8,7 +8,7 @@ pdf: /pdfs/resources_on_computational_linguistics.pdf
 
 This is simply going to be a repository where I throw links and whatnot that I find in my perusing—anything that I want to hold on to for later that has any connection to computational linguistics. If you think there’s something I should add to this list, feel free to email me.
 
-I’m currently preparing to apply to master’s programs in computational linguistics, and I thought it might be useful to peruse the internet and see what I couldn’t dig up on the topic. I’m especially interested in the application of machine learning to historical linguistics—a topic I’m writing an article on at the moment, in fact—so it may be the case that many of my resources will focus on that. However, I’ll try to keep my net as broad as possible. In any case, I hope this list proves useful.
+I’m currently preparing to apply to Master’s programs in computational linguistics, and I thought it might be useful to peruse the internet and see what I couldn’t dig up on the topic. I’m especially interested in the application of machine learning to historical linguistics—a topic I’m writing an article on at the moment, in fact—so it may be the case that many of my resources will focus on that. However, I’ll try to keep my net as broad as possible. In any case, I hope this list proves useful.
 
 # General
 
