@@ -4,6 +4,7 @@ details: true
 author: Collin Brown
 words: 9311
 tags: history, alchemy, Isaac Newton
+pdf: /pdfs/principia_alchemica.pdf
 ---
 
 The alchemical research of Isaac Newton has, in the time since his death, waxed and waned in perceived importance: sometimes seen as the youthful fantasy of a young genius and, in others, as the fruitless endeavor of—as the economist and fan of Newton’s, John Maynard Keynes, put it—“the last of the magicians.”^[Newman, William R. "The Problem of Alchemy." (*The New Atlantis*, no. 44, 2015), 65.] While much ink has been spent on the relationship between Newton’s alchemy and his science, it can be said with some certainty that the public’s view of alchemy during the turn of the eighteenth century was influenced by their evolving knowledge of his alchemical research. The public of his time shifted towards derision, a rather quick shift but one with its roots in previous centuries, and Newton’s work on the subject and his importance in the broader scientific community influenced the outcome of this change, not only in the realm of public opinion but also in the realms of science and law, where they inherited from and pertained to alchemy respectively.

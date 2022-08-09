@@ -70,14 +70,19 @@
                 $endif$
             </div>
             <div id="details">
+                <br>
                 $if(dates)$
                     Posted on $date$
+                    <br>
                 $endif$
-                <br>
                 $if(author)$
                     By $author$
+                    <br>
                 $endif$
-                <br>
+                $if(pdf)$
+                    PDF: <a class="link" href=$pdf$ title="Access a pdf version of this post.">Available</a>
+                    <br>
+                $endif$
                 $if(words)$
                     Word Count: $words$ words.
                     <div id ="output"></div>
