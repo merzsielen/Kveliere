@@ -1,7 +1,7 @@
 ---
 title: "Chapter Ten: At the Eonóll Inn"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 *There was once beauty here.* Here, where the leaves mete and dole light across the clearing, kissing the shingles of the Eonóll Inn with autumn hues. Where the grasses sprout sparse across the dirt and the remnants of a brook trails through the yard, and in its wake stones hunker to the bed. Where a well sags into the earth, and beside it a tree sets roots that slither up through the path leading to the door, throwing over cobblestones. Had there been beauty still, one might have caught the scent of candles from the open windows, or perhaps the smoke of the hearth spooling up out of the red-brick chimney. But there is no scent, and there is no smoke—only the dry stench of dead earth and the whisperings of water, faint and sweet, from a brook that can only be heard.

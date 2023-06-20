@@ -1,7 +1,7 @@
 ---
 title: "Chapter Thirteen: An Ancient and Ruinous Whisper"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 The first riverfolk called it Álor-én-Ér, where the sun peeks above Vómakháll and flutters down past pines and lesser peaks, over the crest of a fallen stone, and pierces the trunk of an ashen tree. You will not understand, if you haven’t seen one—an ashen tree, that is. There are not as many as there used to be. Father had to explain them to me when we first came upon it. I thought, as our wagon bumbled up into the clearing, that it had been willed into that shape by some implement of the locals, but he wagged a finger and grinned.

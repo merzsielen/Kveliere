@@ -1,7 +1,7 @@
 ---
 title: "Chapter Eleven: Our Illusions of Beauty"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 I wish I had better words for what I saw then.

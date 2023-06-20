@@ -1,7 +1,7 @@
 ---
 title: "Chapter Eighteen: A Chance Reunion"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 I do hate when chapters begin with their narrators waking up. It’s a despicable trope. Waking scenes and dream sequences—the calling cards of mediocrity. And yet, I must say, when I awoke this morning it felt worth writing about. Trees huddled about a stream as it wove through the clearing outside my window, the same stream that yesterday had been little more than a dry bed surrounded by shoots of grass. Now, it warbled out of sight, licking the fringes of green that blanketed the yard and scraped at Édara’s boots as she stood at the well, tugging the bucket up from the depths. A few birds flitted between branches. Leaves fluttered at the passing of their wings. And beneath it all a stillness weighed in the air. Not silence. Not the quiet of a held breath. This was the settled earth and dew-thick breeze of the slowing of the world.

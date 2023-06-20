@@ -1,7 +1,7 @@
 ---
 title: "Chapter Six: The Gift of the Otherworld"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 He was born Mélshen, that much I know. His mother, Lílen, raised him herself in the town of Mhuchel, where the icy waters of the coast lap at the foundations of their homes, northeast of Vómakháll. She used to stand, garbed in several layers of cotton cloaks and scarves, and point out to the Isola Lúruen, whose coast appeared as a haze over the waves. The wind would sweep up the bluffs, and she’d clutch him close. And I am told that it is here he first bent the fae powers of the Otherworld to his whim.

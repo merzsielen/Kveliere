@@ -1,7 +1,7 @@
 ---
 title: "Chapter Two: A Tapestry of Stars"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 The villagers of Mávben hold, twice a year, a festival on the stretch of beach laid bare by the receding of the tides. The water warbles out far enough, I’m told, that they hurry down the rickety stairs set into the cliffs and heave up a tent, trot a few horses down the bluffs some leagues south, and get to running them on the sands. Someone is selected by lottery—by drawing a pin or ring or some other identifying trinket from a hat, for paper is far too expensive for such a thing—and made to sit atop the cliffs and watch for the returning of the tides, warning only once it has come so close that, if they began to pack up just then, the last of them to leap onto the stairs and hurry up to dry land might feel the nip of fish on their toes and the lick of the waves at their heels.

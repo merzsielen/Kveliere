@@ -1,7 +1,7 @@
 ---
 title: "Chapter Seventeen: The Whisper and The Worm"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 Khal searched the mantle with a hollow gaze for a long moment, while the fire churned amidst the logs and hovered low, burning deep and quiet. Ashes whispered about the base of the flames and threatened to spill out onto the floorboards, but Édara kicked them back with a dustpan and knelt again beside Khal’s seat. He looked to her and then to me.

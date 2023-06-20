@@ -1,7 +1,7 @@
 ---
 title: "Chapter Nineteen: Blade and Star"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 By the time I had sloughed my coat onto my bed at the Eonóll Inn and stepped back out into the commons, Khal had descended from his room and settled back into the seat beside the hearth. I fetched two drinks from Liam and brought them over. Khal clutched his in both hands, resting the mug on his stomach. I set mine upon the table beside us as I prepared my ink and quill.

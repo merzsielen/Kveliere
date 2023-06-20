@@ -1,7 +1,7 @@
 ---
 title: "Chapter Seven: Festival of the Tides"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 I know, dear reader, my journey is a weary one. It is a forty day trek from Mávben to Féavoll and another seven down to the Shóroll Strait that divides the lands of the Valkons from the younger kingdoms of the riverfolk. To the north, the Véosá Strait winds to the Hart, and heading south along the inner coast, one comes to the Meye, which carves through the canyons of the midlands and out to sea and the shores of Nychiour.

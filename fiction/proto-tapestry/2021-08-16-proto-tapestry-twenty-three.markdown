@@ -1,7 +1,7 @@
 ---
 title: "Chapter Twenty-Three: A Time for Silence"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 Smoke wove thin strands up from the ashes of the fireplace in the Eonóll Inn. What remained of a log flaked and crumbled, and a few cinders swirled up above the hearth and threatened to nip at my fingers as I folded my journal shut and watched Khal rest his head in his hands. Warmth cast his cheeks in shades of red; maroon, beneath his eyes; but those irises—they remained a crystalline hue. A hint of tears trembled there. His breathing softened until only the slow rise and fall of his chest remained. After a few moments, he rose and departed up the stairs.

@@ -1,7 +1,7 @@
 ---
 title: "Chapter Four: A Tale From His Youth"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 A grey cloak trudged between the wagons of the Travelers’ caravan, the tails of tattered fabric whispering, a thousand runes woven into the very threads. A silver chain clasped about the figure’s neck, and a ring strung upon it thudded with each step. From her tent, Léln caught sight of him as a glint of moonlight caught in the band and flickered out of sight. She cupped her child closer to her chest. The warmth of him seeped into her skin. His little fists strained against the swathes of fabric, and she took a moment to wrap them once more about her son.

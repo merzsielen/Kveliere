@@ -1,7 +1,7 @@
 ---
 title: "Chapter Fifteen: Into These Tales"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 One day, several years after, I would sit in an inn and listen to a bard recount how Theryn and Luin had come down from the Hinterlands, along the landbridge to the north of Alvyria. A lie, yes, and yet not entirely untrue. A few years later, I’d hear it told that they apparated into the forest by way of arcane spells and stumbled upon our camp, there in the clearing around the ashen tree. I once told a fellow traveler that they had come searching for me. None of these things are true. I can say much of those two old fools, but why they appeared when they did is beyond me. Call it fate. Call it destiny. I am sure they themselves would not have called it chance.

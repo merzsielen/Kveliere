@@ -1,7 +1,7 @@
 ---
 title: "Chapter Three: On the Path"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 The grasses there are tinged a ruddy hue, so that the fields swaying before me sparkled with flecks of crimson and scarlet as I trekked down the coast of An Khóuno Ámgho Én—what I might translate as the Bay of Harvest. One man I met with on the trail called it the Gulf of Good Favor, though that seems too long a name, and yet another—a pilgrim heading north towards Keirigan on the Verdant Path—named it the Gulf Where the Grain Grows Tall. I would say he was picking from a bag of those words he knew of the southron tongue in which we spoke, but then he went and recounted a poem for me in perfect Valkon as we sat around a fire with two other pilgrims, just as the sun flickered and fell over the distant hills.

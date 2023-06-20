@@ -1,7 +1,7 @@
 ---
 title: "Chapter One: A Tapestry of Stars"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 This tree is an old one. Do not worry, I will not bore you with a description of its too-soft leaves or the fibrous hairs which run along its twisting trunk—split in twine, forming a ring as tall as a man at its center, like some otherworldly door—but believe me when I say this: it has stood in this plaza, in this city, for longer than the oldest stones have laid in the oldest towers. This is Metir Keviv; this tree, the city; and at its foot, Khal found himself clutching his walking stick, studying the white roots which wound their way through the cracks in the cobblestones and out into the foundations of the tenements and shops lining the courtyard. He found himself there, and he found himself wondering. How long had it been since he had first seen this place? How much deeper the wrinkles in his cheeks? How much heavier his limbs? How sallow and waxen his skin?

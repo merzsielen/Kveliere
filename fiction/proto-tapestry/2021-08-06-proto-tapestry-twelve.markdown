@@ -1,7 +1,7 @@
 ---
 title: "Chapter Twelve: Moonpath"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 In the pining of moonlight, one can see—as a silhouette against cream-white sky—the pitch and crest of Vómakháll, the ridges pronouncing themselves from the droves of oaks huddled about its slopes, and the Wandering Moon—Gaelica searching with tendril-fingers through the canopies of wine-dark leaves. One day I will return there. Where the snow clings to granite and the winds choke the mountain’s throat; where the last cliff stands stark, enveloped by clouds; where thousands of years ago, my people dabbed their hands and impressed the stone with images of the lands they had left behind—there, I will pitch a hut and walk a while, until the tides take me. But for now I have only these memories.

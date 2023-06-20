@@ -1,7 +1,7 @@
 ---
 title: "Chapter Sixteen: Fragments"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 There is something inside of me.

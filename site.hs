@@ -23,6 +23,10 @@ main = do
             route   idRoute
             compile copyFileCompiler
 
+        match "json/**" $ do
+            route   idRoute
+            compile copyFileCompiler
+
         match "font/**" $ do
             route   idRoute
             compile copyFileCompiler

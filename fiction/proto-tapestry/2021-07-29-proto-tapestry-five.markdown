@@ -1,7 +1,7 @@
 ---
 title: "Chapter Five: Along the River Féar"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 I carried that tale with me, down from the coast of the Bay of Harvest and along the banks of the river, Féar, all the while entertaining the company of the pilgrim, Héna. She’d two children back home in Shésaven, near Féavoll, and had asked whether she couldn’t accompany me back on my way. I will admit, dear reader, that I prefer to travel alone. Alas, the creed forbids scorning company, so as we marched along, I prayed she would have a tale for me to make it worth my while.

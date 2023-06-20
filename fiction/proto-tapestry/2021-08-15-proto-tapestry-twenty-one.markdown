@@ -1,7 +1,7 @@
 ---
 title: "Chapter Twenty-One: The Songs of Thelair"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 That morning, I saw your mother, and it was as if the whole world had conspired to grant me this one glimpse of beauty. She sat on my bedside, unwinding strips of gauze; the slow fold and flick of her fingers coiled lengths of fabric down upon the cot; she drew her lips as she worked, and her eyes were all but closed—her face cast in shades of russet and red. Her irises flitted between her work, twin slivers of gold illuminated by the light filtering through the curtains beside my bed. Her hair was pulled back in a bun, though several curls wriggled free, dangling around her shoulders. Sunlight glinted along the strands. The ends danced as she smothered a laugh. It was only then I realized she was watching me.

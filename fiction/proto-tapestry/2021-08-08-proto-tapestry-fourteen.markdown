@@ -1,7 +1,7 @@
 ---
 title: "Chapter Fourteen: Branches of the Ashen Tree"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 Khal let his voice taper down into a whisper then slip away entirely, his lips pressed and his gaze cast into the flames. A paleness passed behind his eyes, as veils drawn over the irises, painting their reflection of the tongues of fire in shades of grey that warped and melted into black. He rested his head in a hand.

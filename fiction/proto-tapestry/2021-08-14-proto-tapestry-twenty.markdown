@@ -1,7 +1,7 @@
 ---
 title: "Chapter Twenty: The Turning of the World"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 I first met your mother in the northern district of the Auroral City, where her family had settled some years before, fleeing from a war in the north, and now she worked as a servant for House T’ver—one of its lesser branches, that is. We met in an inn on the eastern shore; the walls sagged inwards, and the stench of mold hung heavy on the air, but there were few other establishments where one could find a drink in the whole city. The Fair Lady’s law kept the rest of Metir Keviv dry, but here, where migrants from the Riverlands and Vómakháll had settled, there were a few places where pioneering innkeepers still smuggled through the undercity, and one could get a pint without too much trouble.

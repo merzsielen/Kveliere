@@ -1,7 +1,7 @@
 ---
 title: "Chapter Twenty-Two: The Slow Departure of Beauty"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 When Theryn and Luin came to our wagon, I knew that I would go with them.

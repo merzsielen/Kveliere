@@ -1,7 +1,7 @@
 ---
 title: "Chapter Eight: Among Auroral Heights"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 A ribbon slithered on the winds, weaving between the spires of Metir Keviv. The towers there—with their russet shingles and marble exteriors that seem taken straight from some chivalric romance of yore—loom so high above the clouds that one must stop at alcoves along the stairwells to catch one’s breath, or else faint from lightheadedness and go tumbling all the way back down to the city below. So far from the ratways; from the gutters thick with peasantry who stink of sweat and sties; from the undercity, where hundreds of years worth of markets and homes have been built over, allowed to sink down into the soft belly of the earth, where the only light comes from the uncertain flames of lanterns and the air is cool as decay—so far from *that* Metir Keviv, there is another. In this Auroral City, the air is still as cool, and oft light comes from candles melted upon desks, but here the scent of smoking wicks and dusty parchment clings to the breeze. Here, the Fair Lady of that city sits upon her perch, up among the clouds. And it was there, in her highest tower, that the one who you call Khal Mhuchelván was born. Then, he was called Aren.

@@ -1,7 +1,7 @@
 ---
 title: "Chapter Nine: Pierced to the Root"
 author: Collin Brown
-tags: fiction, tapestry
+tags: fiction, proto-tapestry
 ---
 
 Upon the banks of the Shóroll Strait, I stood and watched the waves lap upon the shore. I was told that on a particularly clear day one could stand in this very spot and see the oaks of the realm of Nedyále taper down into the sands, where salt-washed branches clawed up from the waters and the remnants of trunks rolled in the waves.
