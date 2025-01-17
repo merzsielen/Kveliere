@@ -1,6 +1,6 @@
 ---
 title: "Chapter Twenty-One: The Songs of Thelair"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

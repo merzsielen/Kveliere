@@ -1,6 +1,6 @@
 ---
 title: "Chapter Twenty-Three: A Time for Silence"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

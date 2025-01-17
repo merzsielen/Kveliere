@@ -1,6 +1,6 @@
 ---
 title: "Chapter Fourteen: Branches of the Ashen Tree"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

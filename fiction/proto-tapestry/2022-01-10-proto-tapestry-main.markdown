@@ -1,6 +1,6 @@
 ---
 title: Proto-Tapestry
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

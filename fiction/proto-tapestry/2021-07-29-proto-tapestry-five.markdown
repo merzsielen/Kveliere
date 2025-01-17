@@ -1,6 +1,6 @@
 ---
 title: "Chapter Five: Along the River Féar"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

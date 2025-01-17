@@ -1,7 +1,7 @@
 ---
 title: "A Dictionary of Classical Valkon"
 details: true
-author: Collin Brown
+author: Elyá
 tags: Classical Valkon, Vālkón-Talān, Alvyria
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Chapter Two: A Tapestry of Stars"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

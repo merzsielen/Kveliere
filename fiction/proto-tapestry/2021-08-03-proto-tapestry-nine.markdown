@@ -1,6 +1,6 @@
 ---
 title: "Chapter Nine: Pierced to the Root"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

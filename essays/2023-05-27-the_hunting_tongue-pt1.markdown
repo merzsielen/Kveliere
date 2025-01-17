@@ -2,7 +2,7 @@
 title: "The Hunting Tongue"
 subtitle: "Part One"
 details: true
-author: Collin Brown
+author: Elyá
 words: 5910
 tags: conlang, linguistics, sign languages
 pdf: /pdfs/the_hunting_tongue_pt1.pdf

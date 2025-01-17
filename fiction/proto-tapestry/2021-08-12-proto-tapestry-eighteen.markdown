@@ -1,6 +1,6 @@
 ---
 title: "Chapter Eighteen: A Chance Reunion"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

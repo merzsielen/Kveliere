@@ -1,7 +1,7 @@
 ---
 title: "Ode to Armok"
 details: true
-author: Collin Brown
+author: Elyá
 tags: gaming, dwarf fortress, review, love letter, other
 ---
 

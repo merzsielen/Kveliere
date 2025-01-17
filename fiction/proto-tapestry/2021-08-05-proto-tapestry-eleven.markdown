@@ -1,6 +1,6 @@
 ---
 title: "Chapter Eleven: Our Illusions of Beauty"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

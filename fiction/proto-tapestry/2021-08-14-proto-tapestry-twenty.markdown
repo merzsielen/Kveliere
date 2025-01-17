@@ -1,6 +1,6 @@
 ---
 title: "Chapter Twenty: The Turning of the World"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

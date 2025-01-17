@@ -1,6 +1,6 @@
 ---
 title: "Chapter Ten: At the Eonóll Inn"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

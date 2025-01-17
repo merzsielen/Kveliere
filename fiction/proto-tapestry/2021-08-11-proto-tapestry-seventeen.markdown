@@ -1,6 +1,6 @@
 ---
 title: "Chapter Seventeen: The Whisper and The Worm"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Makhtl"
 details: true
-author: Collin Brown
+author: Elyá
 words: 15474
 tags: conlang, linguistics, writing systems
 pdf: /pdfs/makhtl.pdf

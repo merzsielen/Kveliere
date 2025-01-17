@@ -1,6 +1,6 @@
 ---
 title: "Chapter Thirteen: An Ancient and Ruinous Whisper"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Chapter Twenty-Two: The Slow Departure of Beauty"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

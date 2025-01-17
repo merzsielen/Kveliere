@@ -1,6 +1,6 @@
 ---
 title: "Chapter Four: A Tale From His Youth"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Chapter Sixteen: Fragments"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

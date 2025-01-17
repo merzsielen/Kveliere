@@ -1,6 +1,6 @@
 ---
 title: "Chapter Six: The Gift of the Otherworld"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

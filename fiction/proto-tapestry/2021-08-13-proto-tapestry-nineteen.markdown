@@ -1,6 +1,6 @@
 ---
 title: "Chapter Nineteen: Blade and Star"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

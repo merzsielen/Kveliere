@@ -1,6 +1,6 @@
 ---
 title: "Resources on Computational Linguistics"
-author: Collin Brown
+author: Elyá
 details: true
 tags: linguistics, computer science, computational linguistics
 pdf: /pdfs/resources_on_computational_linguistics.pdf

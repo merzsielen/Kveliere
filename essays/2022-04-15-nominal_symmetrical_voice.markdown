@@ -1,7 +1,7 @@
 ---
 title: "Nominal Symmetrical Voice"
 details: true
-author: Collin Brown
+author: Elyá
 words: 3673
 tags: conlang, linguistics
 pdf: /pdfs/nominal_symmetrical_voice.pdf

@@ -1,6 +1,6 @@
 ---
 title: "Chapter Eight: Among Auroral Heights"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

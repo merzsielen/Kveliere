@@ -43,7 +43,7 @@ main = do
             route idRoute
             compile copyFileCompiler 
 
-        match (fromList ["about.markdown", "contact.markdown", "flow.markdown"]) $ do
+        match (fromList ["about.markdown", "contact.markdown"]) $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext

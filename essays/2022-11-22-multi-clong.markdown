@@ -1,7 +1,7 @@
 ---
 title: "Multi-Clong"
 details: true
-author: Collin Brown
+author: Elyá
 words: 1477
 tags: conlang, linguistics, translation
 pdf: /pdfs/multi-clong.pdf

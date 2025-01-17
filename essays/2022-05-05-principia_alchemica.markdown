@@ -1,7 +1,7 @@
 ---
 title: "Principia Alchemica"
 details: true
-author: Collin Brown
+author: Elyá
 words: 9311
 tags: history, alchemy, Isaac Newton
 pdf: /pdfs/principia_alchemica.pdf

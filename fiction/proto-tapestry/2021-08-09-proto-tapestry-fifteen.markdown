@@ -1,6 +1,6 @@
 ---
 title: "Chapter Fifteen: Into These Tales"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Chapter Three: On the Path"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 

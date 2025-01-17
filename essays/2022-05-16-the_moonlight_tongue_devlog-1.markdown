@@ -1,11 +1,10 @@
 ---
 title: "The Moonlight Tongue"
 subtitle: "Devlog One"
-author: Collin Brown
+author: Elyá
 details: true
 words: 4315
 tags: game dev, coding, pixel art, platformer, puzzle
-repo: collinjbrown/The-Moonlight-Tongue
 ---
 
 *The Moonlight Tongue* is a puzzle-platformer in which you play a pacifist monk carrying a supernatural sword up a mountain to achieve peace both for yourself and the lands below.

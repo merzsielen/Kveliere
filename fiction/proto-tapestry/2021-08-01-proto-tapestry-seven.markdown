@@ -1,6 +1,6 @@
 ---
 title: "Chapter Seven: Festival of the Tides"
-author: Collin Brown
+author: Elyá
 tags: fiction, proto-tapestry
 ---
 
