@@ -118,6 +118,29 @@ main = do
                 >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags essTags)
                 >>= relativizeUrls
 
+        mitaTags <- buildTags "mitaeme/*" (fromCapture "tags/*.html")
+
+        tagsRules mitaTags $ \tag pattern -> do
+            let title = "Mitaeme-related pages tagged \"" ++ tag ++ "\""
+            route idRoute
+            compile $ do
+                mitaeme <- recentFirst =<< loadAll pattern
+                let ctx = constField "title" title
+                        `mappend` listField "mitaeme" postCtx (return mitaeme)
+                        `mappend` defaultContext
+
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/tag.html" ctx
+                    >>= loadAndApplyTemplate "templates/default.html" ctx
+                    >>= relativizeUrls
+
+        match "mitaeme/**" $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags mitaTags)
+                >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags mitaTags)
+                >>= relativizeUrls
+
         match "index.html" $ do
             route idRoute
             compile $ do
